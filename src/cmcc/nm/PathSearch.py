@@ -145,29 +145,61 @@ haveTryCargo：已经计算过的货物名称
 valueArray: 每行对应一个物品组合方式的价值
 cargoArray: 与valueArray对对应，valueArray的每个元素对应到此列表都是一个列表，表示物品组合方式
 '''
-
 #cargoDict={1:1,2:2}
+#valueArray=[[1,1,1,1]
+#            [1,2,2,2]]
+#cargoArray=[[[1],[1],[1],[1]]
+#            [[1],[1,2],[1,2],[1,2]]]
 def dynamicProgramming_Search(capacity,cargoDict={},haveTryCargo=[],valueArray=[],cargoArray=[],minCapa=0,calls=0):
     #取得所有物品中容量最小的物品容量，作为基准值
-    if minCapa==0:
+    if minCapa==0: #初次调用
         minCapa=min([x[0] for x in cargoDict.values()])
         calls=math.ceil(len(cargoDict) / minCapa)
-
+        if calls==len(cargoDict)/minCapa:
+            calls+=1
+        valueArray=[[] for x in range(len(cargoDict))]
+        cargoArray= [[] for x in range(len(cargoDict))]
     copyCargoDict=cargoDict.copy()
-    if len(cargoDict)>1:
+    if len(cargoDict)==1:
+        # 只有一行货物时
+        currCargo = list(cargoDict.keys())[0]  # 当前货物名称
+        haveTryCargo.append(currCargo)
+        for i in range(0, calls):
+            currCapa = (i + 1) * minCapa
+            if currCapa >= cargoDict.get(currCargo)[0]:
+                valueArray[0].append(cargoDict.get(currCargo)[1])
+                cargoArray[0].append([currCargo])
+            else:
+                valueArray[0].append(0)
+                cargoArray[0].append([''])
+    elif len(cargoDict)>1:
         currItem=copyCargoDict.popitem()
-        dynamicProgramming_Search(capacity,copyCargoDict,haveTryCargo,valueArray,cargoArray,minCapa,calls) #返回的是列表
-        #把当前元素popItem加入矩阵，然后计算
-        currCargo=list(currItem.keys())[0]
+        dynamicProgramming_Search(capacity,copyCargoDict,haveTryCargo,valueArray,cargoArray,minCapa,calls)
+        #把当前元素currItem加入矩阵，然后计算
+        currCargo=currItem[0] #当前货物名称
         haveTryCargo.append(currCargo)
         for i in range(0,calls):
             currCapa=(i+1)*minCapa
-            if currCapa>=currItem.get(currCargo)[0]: #能存放下
-                if currItem.get(currCargo)[1]>valueArray[len(haveTryCargo)-2][i]:
+            if currCapa>=currItem[1][0]:
+                #能存放下,计算剩余容量，然后看剩余容量能否再加入其它
+                currValue=currItem[1][1]
+                currCargos=[currCargo]
+                residueCapaIndex=(currCapa-currItem[1][0])//minCapa-1  #存放当前货物后，剩余容量对应上一行序号
+                if residueCapaIndex>=0: #剩余够装上一行的值
+                    #计算当前货物组合上一行货物后总价值
+                    currValue+=valueArray[len(haveTryCargo)-2][residueCapaIndex]
+                    currCargos+=cargoArray[len(haveTryCargo)-2][residueCapaIndex]
+                if currValue>valueArray[len(haveTryCargo)-2][i]:
                     #当前价值大于上一行价值
-                    pass
-    elif len(cargoDict)==1:
-        pass
+                    valueArray[len(haveTryCargo)-1].append(currValue)  # 添加新行
+                    cargoArray[len(haveTryCargo)-1].append(currCargos)
+                else: #当前价值小于上一行价值
+                    valueArray[len(haveTryCargo)-1].append(valueArray[len(haveTryCargo)-2][i])
+                    cargoArray[len(haveTryCargo)-1].append(cargoArray[len(haveTryCargo)-2][i])
+            else:
+                # 存放不下，拷贝上一行节点
+                valueArray[len(haveTryCargo) - 1].append(valueArray[len(haveTryCargo) - 2][i])
+                cargoArray[len(haveTryCargo) - 1].append(cargoArray[len(haveTryCargo) - 2][i])
+        return valueArray[-1]+cargoArray[-1]
     else:
         print('物品名称、价值字典长度为0或不是字典类型')
-
