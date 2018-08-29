@@ -1,0 +1,433 @@
+一、单项选择题
+1．（  A  ）是Oracle服务器在启动期间用来标识物理文件和数据库结构的二进制文件。
+A．控制文件  B.参数文件  C.数据文件  D.日志文件
+2．（  B  ）进程主要职责是监控服务器进程和注册数据库服务。
+A.SMON    B.PMON   C.CHKT    D.LGWR
+3.(   C  )代表了数据库中最小粒度的逻辑数据存储层次。
+A.盘区  B.表空间  C.数据块  D.数据文件
+4．用于在启动实例时配置数据库，确定Oracle 11g的运行环境文件是（   A  ）
+A.参数文件  B.数据文件   C.可执行文件   D.控制文件
+5．下列选项中，哪一部分不是Oracle实例的组成部分？（   C   ）
+A.系统全局区SGA  B.PMON后台进程  C.控制文件  D.Dnnn调度进程
+6．在全局存储区SGA中，哪部分内存区域是循环使用的?(   B   )
+A.数据缓冲区  B.日志缓冲区  C.共享池  D.大池
+7．解析后的SQL语句在SGA的哪个区域中进行缓存？（   C   ）
+A.数据缓冲区  B.日志缓冲区  C.共享池  D.大池
+8．如果服务器进程无法在数据缓冲区中找到空闲缓存块，以添加从数据文件中读取的数据块，则将启动如下哪个进程？（   A   ）
+A.DBWR    B.LGWR    C.SMON    D.PMON
+9.如果服务器进程非正常终止，Oracle系统将使用下列哪一个进程以释放它所占用的资源？（   D   ）
+A.DBWR    B.LGWR    C.SMON    D.PMON
+10．下列哪个进程用于将修改过的数据从内存保存到磁盘数据文件中？（   A   ）
+A.DBWR    B.LGWR    C.RECO    D.ARCH
+11.当数据库运行在归档模式下时，如果发生日志切换，为了保证不覆盖旧的日志信息，系统将启动哪个进程？（   D  ）
+A.DBWR    B.LGWR    C.SMON    D.ARCH
+12.下面哪个描述是正确的？（  A  ）
+A.表空间由段组成，段由盘区组成，盘区由数据块组成。
+B.段由表空间组成，表空间由盘区组成，盘区由数据块组成。
+C.盘区由数据块组成,数据块由段组成，段由表空间组成。
+D.数据块由段组成，段由盘区组成，盘区由表空间组成。
+
+1.下列哪个部分不是oracle实例的组成部分？（ C ）
+A.系统全局区域    B. 服务器进程  C.数据库作者  D.系统监控器
+2.你用DBCA建立了一个数据库而没有保存模版定义。现在你打算用DBCA拷贝整个数据库和数据，下列哪个是首先要做的？（ D ）
+A.使用脚本建立新的数据库，使用DBCA导入数据 
+B.用DBCA模版管理从现有数据库建立一个新的数据库，数据也如此导入
+C.从模版列表中选择先前建立的数据库模版并建立数据库
+D.从现有数据库中拷贝数据文件建立新的数据库，然后利用DBCA拷贝数据
+3. 你正在你的组织紧急事件处置演习中。几乎没有时间通报用户，你就需要尽快地停止数据库进程。下列命令哪个是你需要要执行的？（ D ）
+A. shutdown abort    B. shutdown transactional  
+C. shutdown          D. shutdown immediate
+4. 你正在用共享服务器管理一个数据库。Large_pool_size是50M。你执行命令:alter system set Large_pool_size=100M scope=memory后然后关闭并重启数据库。现在Large_pool_size是多少？（ A ）
+   A. 50M        B. 默认Large_pool_size大小
+C. 100M       D.和使用中的oracle SPfile设置的一样
+5. 你使用下列命令连接数据库：sqlplus scott/trigger@abc.com:1522/orcl.目标数据库是哪一个？（ A ）
+A. abc.com   B.tiger   C. orcl   D. scott   E. 以上都不是
+6. 下列哪个不是有效的数据库状态？（ A ）
+A. 开机 B. 关闭 C. 启动 D. 装载 E. 不装载
+7. 如果一个数据库举例(instance)失败，但是没有停止运行，你必须使用哪个命令使实例恢复能被执行？(  B  )
+   A.startup nomount    B. shutdown immediate; start force
+C.startup mount     D.shutdown abort; startup
+8. Oracle数据库由一个或多个称为（）的逻辑存储单元组成。（ B ）
+A.表   B.表空间   C.行   D.单元
+
+1. 对于系统表的空间，Oracle建议的大小是（  D    ）
+A．100M    B. 200M    C.300M    D.400M    E.500M
+2. 下列动态视图中，（    C     ）是从控制文件中得到的所有表空间的名称和数量。
+ A．V$INSTANCE    B.V$DATABASE    C.V$TABLESPACE   D.V$DATAFILES
+3. 如果一个表空间脱机在哪里查看？（  B    ）
+ A. dba_tablespaces  B. v$ tablespaces  C. v$database  D. dba_datafile_status
+4.下面哪个参数不能在STORAGE子句中进行设置（   B  ）
+A. INITIAL  B. PCTUSED  C. MINEXTENTS  D. NEXT
+5.Oracle数据库的最小I/O单位是（   D   ），最小磁盘分配单位是（   C    ）
+A. 表空间  B. 段  C. 盘区  D. 数据块
+6.在设置自动撤消管理时，下列（   B   ）参数用于设置所使用的撤消表空间，（  C   ）参数用于设置撤消数据的保留时间。
+A.UNDO_MANAGEMENT     B. UNDO_TABLESPACE  
+C.UNDO_RETENTION       D. ROLLBACK_SEGMENTS
+7.把一个表空间切换到OFFLINE状态时，可以使用4个参数，不包括下列哪个选项？(  D  )
+A.IMMEDIATE  B.NORMAL   C.TEMPORARY  D.FORCE
+8.在设置撤消表空间的自动管理功能时，DBA通过使用相关的初始化参数对自动撤消表空间进行配置。下面的4个参数中，哪一个不是与自动撤消管理功能相关的参数？(   D   )
+A.UNDO_MANAGEMENT     B. UNDO_TABLESPACE  
+C.UNDO_RETENTION       D. TRANSACTIONS
+
+1.Oracle表的唯一键约束与主键约束的一个区别是（  A   ）
+A.唯一键标识的列可以为空       B. 主键标识的列可以为空
+C. 唯一键标识的列只可以为单列  D. 主键标识的列只可以为单列
+2.下列哪个是无效的列名？（  A   ）
+   A.1ST_ID  B.CUST#  C.ADDRESS1  D.EXCEPTION
+3.如果希望在激活约束时不验证表中已有的数据是否满足约束的定义，那么可以使用下列哪个关键字？（  D  ）
+A.disactive  B.validate   C.active  D.novalidate
+4.SQL语言中，删除一个表的命令是（ B ）
+A. DELETE   B. DROP   C.CLEAR   D. REMORE
+5. 有一个关系：学生（学号，姓名，系别），规定学号的值域是8个数字组成的字符串，这一规则属于（ C ）
+A.实体完整性约束      B.参照完整性约束 
+C.用户自定义完整性约束  D.关键字完整性约束
+6.如果要修改表的结构，应该使用SQL语言的命令（  C ）
+A.UPDATE TABLE  B. MODIFY TABLE  C.ALTER TABLE  D. CHANGE TABLE
+7.如果各类元组在表的主键上取值为空值，那么它违反了关系的______A______完整性约束
+A. 实体完整性  B. 引用完整性  C. 域完整性  D. 用户 
+8.下面关于主键约束的描述正确的是（   A   ）
+A.主键约束用于唯一的确定表中的每一行数据。
+B.在一个表中，最多只能有两个主键约束。
+C.主键约束只能由一个列组成。
+D.主键约束不能由一个单列组成。
+9．如果希望更新表authors中的first_name列为非空，那么可以使用哪个语句？（  B  ）
+A.alter table authors add first_name not null
+B. alter table authors modify first_name not null
+C. alter table authors alter first_name not null
+D. alter table authors drop first_name not null
+10. 表Sales存储其在某一天所销售的商品。在一张销售单上可以销售多个商品。表Sales的结构如下： 
+CREATE TABLE Sales
+(cSalesNo char(4) not null,
+cProductID char(4) not null,
+dDate datetime not null,
+mPrice money not null,
+nQty  not null)
+关于 表Sales，下述哪个陈述为真？（   A   ）
+A.属性cSalesNo 和属性 cProductId的组合作为主关键字。 
+B.属性cSalesNo 和属性cProductId是候选关键字。
+C. 选择属性cSalesNo作为主关键字。
+D. 如果属性cSalesNo作为主关键字，则cProductId 属性作为替代关键字。
+11.雇员的情况和其所工作的部门存储在表Employee和表 Department中。有许多雇员名字
+相同但雇员代码不同。除此之外，在一个部门里，可以有多个雇员。
+表Employee创建如下：
+CREATE TABLE Employee
+(ECode char(6) not null,Name char(20) not null,DepartmentId char(4) not null)
+表Department创建如下：
+CREATE TABLE Department 
+(DepartmentId char(4)  not null,DepartmentName char(10) not null)
+关于这二张表，下述那条陈述为真？（  D   ）
+A.通过在表Department的DepartmentId属性上创建外关键字约束对应表Employee的属性DepartmentId来实现实体完整性 
+B. 通过在表Employee的DepartmentId属性上创建外关键字约束对应表Department的属性DepartmentId来实现实体完整性
+C. 通过在表Department的属性DepartmentId上创建外关键字约束对应表Employee的属性DepartmentId来实现引用完整性。
+D.通过在表Employee的属性DepartmentId上创建外关键字约束对应表Department的属性DepartmentId来实现引用完整性。
+12.下列哪种约束实现域完整性？（  A  ）
+A. 主关键字约束。 B. 检查约束。 C.唯一约束。 D.缺省约束。
+13．对于主键的说法错误的是（  B   ）。
+A. 主键字段输入的数据不允许重复
+B. 主键字段的数据，允许输入空值
+C. 若主键由多个键组合而成，则某个主键字段可能存在重复值
+D. 主键字段可以是字符数据类型   
+14.下列哪个对象属于模式对象(  C   )
+A.数据段  B.盘区  C.表   D.表空间
+15.为了减少表中的链接记录和迁移记录，应当增大表的哪一个存储参数？（  A ）。
+A.PCTFREE  B.PCTUSED   C.MAXEXTENTS  D.PCTINCREASE
+16.你定义了一个对象类型myOBJ，要基于该类型来创建表tab1，语句为（  C  ）。
+A.CREATE TABLE tab1 OF myOBJ；
+B.CREATE TABLE myOBJ OF tab1；
+C.CREATE TABLE tab1 AS myOBJ；
+D.CREATE TABLE tab1 TYPE OF myOBJ； 
+17.在表tab1中有列为col1，其数据类型为INTEGER，在PL/SQL的DECLARE部分声明了一个变量var1，语句为：
+var1 tab1.col1%TYPE;
+不久后，执行了语句：
+ALTER TABLE tab1 MODIFY（col1（NUMBER（5,2））；
+则var1的数据类型为（  B  ）。
+A. 整数型 B. 数字型  C. 字符型  D. 以上皆非
+
+1．ORDER BY的作用是（ C ）
+A. 查询输出分组   B. 设置查询条件   C. 对记录排序   D.限制查询返回的数据行
+
+2．设有一个关系：DEPT（DNO，DNAME），如果要找出倒数第三个字母为W，并且至少包含4个字母的DNAME，则查询条件子句应写成WHERE DNAME LIKE （ B ）
+ A.‘_ _ W _ %’   B.‘_ % W _ _’   C. ‘_ W _ _’   D. ‘_ W _ %’
+3．已知成绩关系如下图所示。
+执行SQL语句：
+　　SELECT COUNT（DISTINCT学号）
+　　FROM成绩
+　　WHERE分数＞60
+查询结果中包含的元组数目是（ B ）
+成绩 
+学号	课程号	分数
+S1	C1	80
+S1	C2	75
+S2	C1	null
+S2	C2	55
+S3	C3	90
+A．1    B.2    C. 3   D. 4
+4．基于"学生-选课-课程"数据库中的三个关系：S（S#，SNAME，SEX，AGE）， SC（S#，C#，GRADE）， C（C#，CNAME，TEACHER）,若要求查找选修"数据库技术"这门课程的学生姓名和成绩，将使用关系（  D  ）
+A. S和SC     B. SC和C     C.S和C     D.S、SC和C
+5．基于"学生-选课-课程"数据库中的三个关系：S（S#，SNAME，SEX，AGE）， SC（S#，C#，GRADE）， C)（C#，CNAME，TEACHER）,若要求查找姓名中第一个字为'王'的学生号和姓名。下面列出的SQL语句中，哪个（些）是正确的？（ B  ）
+    Ⅰ. SELECT S#，SNAME FROM S WHERE SNAME = ˊ王%ˊ
+Ⅱ. SELECT S#，SNAME FROM S WHERE SNAME LIKE ˊ王%ˊ
+Ⅲ. SELECT S#，SNAME FROM S WHERE SNAME LIKE ˊ王_ ˊ
+A. Ⅰ     B.Ⅱ     C.Ⅲ      D.全部
+6．有如下两个关系，其中雇员信息表关系EMP的主键是雇员号，部门信息表关系DEPT的主键是部门号。
+EMP
+雇员号	雇员名	部门号	工资
+001	张山	02	2000
+010	王宏达	01	1200
+056	马林生	02	1000
+DEPT
+部门号	部门名	地址
+01	业务部	1号楼
+02	销售部	2号楼
+03	服务部	3号楼
+     执行如下操作：select a.empno,a.empname,a.deptid,a.salary,b.deptid,b.deptname from emp a right outer join dept b on a.deptid=b.deptid 
+请问执行结果中有（  C  ）条记录。
+A. 1     B. 2     C. 3     D. 4
+7.下列函数不属于集函数的是（  D ）
+    A．max     B. avg     C. count     D. substring
+8.从货物定单数据表(order)中查询出其中定单金额(order_price)在1000和5000之间的定单的详细信息，并按照定单金额(order_price)升序排列。正确的语句是（  A  ）。
+    A. Select * from order where order_price 
+between 1000 and 5000 order by order_price ASC
+B. Select * from order where order_price 
+between 1000 and 5000 order by order_price DESC
+C. Select * from order where 1000<order_price<5000 order by order_price ASC
+D. Select * from order where 1000<order_price<5000 order by order_price DESC
+9.在数据库中，要防止大于100的数据保存到age列，可以（  D ）。
+A. 使用主键约束             B. 使用缺省约束
+C. 使用外键约束             D. 使用检查约束
+10.（  C  ）函数不能用于日期/时间类型。
+A.MAX    B.MIN    C.COUNT    D.TO_CHAR
+11．HAVING子句的作用是（   A    ）
+A.查询结果的分组条件        B.组的筛选条件  
+C.限定返回的行的判断条件    D.对结果集进行排序
+12．查询一个表的总记录数，可以采用（  C  ）统计函数。
+A.AVG(*)    B.SUM(*)    C.COUNT(*)    D.MAX(*)
+13.下列涉及空值的操作，不正确的是(  C  )
+A. AGE IS NULL            B. AGE IS NOT NULL
+C. AGE = NULL             D. NOT (AGE IS NULL)
+
+1. 下列中哪个不是DML命令？（ B ）
+   A.Insert   B.Create   C.Update   D.Delete
+2.假设on delete cascade选项没有被定义约束，什么是潜在的外部键约束影响在delete声明？（ B ）
+A.外部键约束能防止删除行如果删除行违反外部键中定义的关系的话
+B.外部键约束确保在删除行之前对数据表有正确的权限
+C.如果只有一行的被删除，该外部键约束将被忽略
+D.外部键对删除表述没有影响
+3.用来插入数据记录的工具是（ D ）。
+A.SQLPLUS     B.DBCA    C.SYSCONFIG    D.DBMS
+4.有如下两个关系，其中雇员信息表关系EMP的主键是雇员号，部门信息表关系DEPT的主键是部门号。
+EMP
+雇员号	雇员名	部门号	工资
+001	张山	02	2000
+010	王宏达	01	1200
+056	马林生	02	1000
+101	赵敏	04	1500
+DEPT
+部门号	部门名	地址
+01	业务部	1号楼
+02	销售部	2号楼
+03	服务部	3号楼
+04	财务部	4号楼
+若执行下面列出的操作，哪个操作不能成功执行(  C   )。
+ A. 从DEPT中删除部门号=‘03’的行
+ B. 在DEPT中插入行(‘06’，‘计划部’，‘6号楼’)
+C. 将DEPT中部门号=‘02’的部门号改为‘10’
+D. 将DEPT中部门号=‘01’的地址改为‘5号楼’
+5.SQL语言集数据查询、数据操作、数据定义和数据控制功能于一体，语句INSERT、DELETE、UPDATE实现哪类功能(   B   )。
+A.数据查询 B.数据操纵 C.数据定义 D.数据控制
+6.若用如下的SQL语句创建了一个表S: CREATE TABLE S（S# CHAR（6） NOT NULL， SNAME CHAR（8） NOT NULL，SEX CHAR（2），AGE INTEGER） 今向S表插入如下行时，（  B  ）可以被插入。
+A. （‘991001’，‘李明芳’，女，‘23’）`
+B. （‘990746’，‘张为’，NULL，NULL）
+C. （，‘陈道一’，‘男’，32）
+D. （‘992345’，NULL，‘女’，25）
+7.用于删除表中所有数据行的命令是（  B  ）
+A. DELETE TABLE  B. TRUNCATE TABLE  C. DROP TABLE  D. ALTER TABLE
+8.假设ABC中的所有列均为字符数据类型，A列的默认值为“VA”，同时还有B列和C列，则执行以下SQL语句：INSERT ABC（A，C）VALUES（‘V’，‘NULL’）后，下列的说法哪一项正确（  A  ）。
+A.插入B列的值为字符‘NULL’       B.插入A列的值为字符VA
+C.插入B列的值空值                 D.插入C列的值空值
+9.如果要设置SQL*PLUS每页打印的数值，则可以使用如下哪个命令（  C  ）
+A.SET PAGE   B.PAGESIZE    C.SET PAGESIZE    D.SIZE
+10.用来插入数据的命令是（    ），用于更新的命令是（    ）。（ A  ） 
+      A.INSERT，UPDATE       B.UPDATE,INSERT 
+   C.DELETE，UPDATE       D.CREATE，INSERT INTO 
+11.在创建序列的过程中，下列（ A  ）选项指定序列在达到最大值或最小值后，将继续从头开始生成值。
+A. Cycle  B. Nocycle  C. Cache  D. Nocache
+
+
+1.PL/SQL最早出现的Oracle版本是（  C  ）
+A.Oracle 1  B.Oracle 7   C.Oracle 6   D.Oracle 9i
+2.在PL/SQL中，下列(  D  )变量名合法。
+A.1VAR    B.?var_ab    C.$ABC    D.ROS$$_1
+3.只能存储一个值的变量是（  B ）
+A.游标   B.标量变量   C.游标变量   D.记录变量
+4.PL/SQL语言的基本逻辑结构不包括（ A ）。
+A.模块         B.顺序      C.选择       D.循环
+5.在以下的表的显示结果中，以下语句的执行结果是
+SQL> select * from usertable;
+USERID         USERNAME
+----------- ----------------
+1               user1
+2               user2
+3               user3
+4               user4
+5               user5
+SQL> select * from usergrade;
+USERNAME            GRADE
+---------------- ----------
+user9                90
+user8                80
+user7                80
+user2                90
+user1               100
+user1                80
+执行语句
+语句一: Select count(*) from usertable t1 where username in (select username from usergrade t2 where rownum <=1);
+语句二: Select count(*) from usertable t1 where exists (select 'x' from usergrade t2 where t1.username=t2.username and rownum <=1);
+以上语句一的执行结果是： ( A ) , 以上语句二的执行结果是： ( C )
+A. 0    B. 1    C.2    D. 3
+6.下列哪个语句允许检查UPDATE语句所影响的行数？(  B  )
+A.SQL%FOUND   B.SQL%ROWCOUNT   C.SQL%COUNT  D.SQL%NOTFOUND
+7.下列哪一项可以正确地引用记录变量的值？（  B   ）
+A.rec_abc(1)   B.rec_abc(1).col  C.rec_abc.col  D.rec_abc.first();
+８.声明%TYPE类型的变量时，服务器将会做什么操作？（  A  ）
+A.为该变量检索数据库列的数据类型   B.复制一个变量
+C.检索数据库中的数据               D.为该变量检索列的数据类型和值
+９.如何终止LOOP循环，而不会出现死循环？（  D   ）
+A.在LOOP语句中的条件为FALSE时停止。
+B.这种循环限定的次数，它会自动终止循环。
+C.EXIT WHEN语句中的条件为TRUE
+D.EXIT WHEN语句中的条件为FALSE
+10. 有一段PL/SQL程序如下所示：
+var1 := 10;
+LOOP
+EXIT WHEN var1 > 12;
+var1 := var1 +1;
+   DBMS_OUTPUT.PUT_LINE(‘A’);
+END LOOP;
+输出为（  C   ）。
+A.  A 
+B.  A  A   
+C.  A
+A
+D . A
+A
+A
+11.DBMS_LOB数据包提供的（  D ），返回LOB值的长度。
+A. LENGTH  B.SUBSTR  C.INSTR  D.GETLENGTH
+12.PL/SQL为内存耗尽时，预定义了（  C ）异常。
+A.NO_DATA_FOUND     B.MEMORY_ERROR
+C.STORAGE_ERROR     D.NO_MEMEORY_FOUND
+13.在PL/SQL中，在执行任何DML语句前，SQL%NOTFOUND的值为（ C ）。（选择一项）
+A. NOTFOUND B. TRUE  C. NULL  D. FALSE
+
+1.下列数据库模式对象中，具有EXECUTE对象权限的是（  B ）
+A.表   B.存储过程   C.触发器   D.索引
+2.Oracle 11g提供了一些预定义角色，供用户用于数据库管理。在创建数据库的过程中这些角色作为创建脚本的一部分自动被创建。其中，（   C  ）角色用于典型的应用程序开发员。该角色允许授权者在相关的模式中创建表、序列、数据簇、过程、函数、包、触发器、对象类型等。
+A.DBA B.CONNECT C.RESOURCE D.EXP_FULL_DATABASE
+3.(  C  )权限可以允许被授权者置数据库于noarchivelog模式？
+A. sysdba  B. root  C. dba  D.operator
+4.下列哪个表述将用户brent和他的模型实体一起从数据库中移动？(   D  )
+A.drop user brent;
+B.delete from dba_uesrs where username=’brent’;
+C.alter system remove user brent cascade;
+D.drop user brent cascade;
+5.下列权限中，哪一个不是数据库的访问权限?(   D   )
+　 A. Read权限  B. Resource权限　C. Update权限  D.Lock权限
+6.假设用户USER1的默认表空间为USERS,他在该空间的配额为10MB，则USER1在USERS表空间创建基本表时，他应具有（  A  ）权限
+A.CREATE TABLE  B.CREATE USER  C.UNLIMITED TABLESPACE  D.LIMITED TABLESPACE
+7.下列哪一项资源不能在用户配置文件中限定？（　A　）
+A.各个会话的用户数　B.登录失败的次数　C.使用CPU时间　D.使用SGA区的大小
+8.下面哪一个不是系统权限？（　　D　）
+A.SELECT TABLE   B.CREATE TABLE   C.SYSDBA   D.CREATE INDEX
+9.想在另一个模式中创建表，用户至少该具有（　B　）系统权限
+A．CREATE TABLE   B.CREATE ANY TABLE   C.RESOURCE   D.DBA
+10.用户查询下列（　C　）数据字典视图可以查看他向其他用户授予的对象权限。
+A.DBA_SYS_PRIVS  B.USER_TAB_PRIVS_MADE  C.USER_TAB_PRIVS  D.USER_OBJ_PRIVS
+11.下面（　　B　）角色允许一个用户创建其他用户
+A.CONNECT    B.DBA    C.RESOURCE    D.SYSDBA
+12.如果要启用所有角色，则应该使用（　B　）命令
+A.SET ROLE ALL  B.SET ROLE ENABLE ALL  C.ALTER SESSION ALL  D.ALTER USER ROLE ALL
+
+1.如果一个用户不慎删除了一个表，这将被认为是什么故障？(   B   )
+A.实例  B.用户错误  C. 表述  D.用户进程
+2.下列哪个不是有效的数据泵导出模式？(  A  )
+A.JAVA  B. SCHEMA C. TABLE  D. TABLESPACE
+3.进行数据库闪回时，必须确保数据库是处于（  C  ）模式。
+A.正常启动模式            B.用户交互模式
+C.归档模式                D.调试维护模式 
+4.Oracle支持多种类型的不完全备份，下列(  B   )不是Oracle所支持的不完全备份？
+A.基于时间的不完全备份   B.基于拥护的不完全备份
+C.基于撤消的不完全备份    D.基于更改的不完全备份
+5.在对恢复目录进行CROSSCHECK检验时，如果RMAN不能找到物理存储的备份文件，则备份文件的信息将被标记为(   A    )。
+A.EXPIRED           B.DELETE
+C.ACAILABLE        D.UNAVAILABLE
+6.下列哪个命令可以用来确认恢复目录中记录的备份数据文件是否存在？(   D  ) 
+A.CROSS CHECK BACKUP OF DATABASE
+B.CROSS CHECK COPY OF DATABASE
+C.CROSSCHECK COPY
+D.CROSSCHECK BACKUP OF ARCHIVELOG ALL
+7.下面哪一种不完全恢复需要使用SCN号作为参数？(   C  )
+A.基于时间的不完全备份
+B.基于撤消的不完全备份
+C.基于更改的不完全备份
+D.基于顺序的不完全备份
+8.执行不完全恢复时，数据库必须处于什么状态？(   D   )
+A.关闭   B.卸载   C.打开   D.装载
+9.下列哪一个命令可以将一个文件的备份还原到数据库原目录中？(   D   )
+A.RECOVER     B.BACKUP    C.COPY    D.RESTORE
+10.使用RMAN进行介质恢复时，执行命令的顺序是什么？(   A   )
+A.RESTORE、RECOVER  B.RECOVER、RESTORE
+C.COPY、BACKUP      D.COPY、RECOVER
+11.下列哪一个操作可以用来为一个备份操作手动分配通道？(   A  )
+A.ALLOCATE CHANNEL      B.CREATE CHANNEL
+C.CHANNEL ALLOCATE      D.CREATE LINK
+12.下列哪一个命令用来显示RMAN通道的配置信息？(  A   )
+A.LIST    B.DISPLAY   C.SHOW   D.都可以
+13.下列哪一个命令可以用来执行不完全恢复？(   B   )
+A.RESTORE DATABASE UNTIL
+B.RECOVER DATABASE UNTIL
+C.RECOVER DATA UNTIL
+D.RESTORE DATA UNTIL
+
+
+简答题：
+1．解释什么是Oracle Database 11g系统中关键网格技术？
+解：
+　　Oracle 11g中“g”是grid的缩写，表示网格，网格计算是一种技术，能对同源不同计算类型的分布式网络进行无缝地、大规模地扩展，允许不同厂商的计算机共同工作来提供无尽的共享计算机资源。比如，有两台PC机，分别来自不同厂商，内存均为516M，现系统运行要求1G的内存，若PC机单独执行肯定不能满足要求，可以通过网格计算和集群技术将两台PC机组合在一起，以满足系统运行需求。
+
+2．简要描述Oracle数据库体系的物理结构。
+解：
+　　Oracle数据库体系的物理结构是指数据库上实际的、可以从操作系统看到的文件，可以利用操作系统指令进行管理作业，物理存储结构组成文件如下所列：
+　　（1）数据文件（Data File）:实际存储数据的地方；
+　　（2）在线重做日志文件（Online Redo Log File）:记录曾经发生过的动作当数据库受损时可利用在线重做日志文件进行必要的恢复动作；
+　　（3）控制文件（Control File）:记录数据库必要的信息以验证及维护数据库的完整性的信息；
+　　（4）初始化参数文件（Parameter File）:当数据库开启时用来架构出Oracle内存结构的文件；
+　　（5）密码文件（Password File）:验证哪些帐号能开启、关闭Oracle数据库。
+　　
+3．介绍Oracle实例系统中，各后台进程的作用。
+解：
+　　（1）DBWRn(Database Writer)的主要工作是将数据缓冲区中被改过的数据写回到数据文件里；
+　　（2）LGWR(Log Writer)主要的工作是将Redo Log Buffer里的记录写到在线重做日志文件中；
+　　（3）SMON(System Monitor)有两个主要的功能。<1>执行Instance Recovery：当数据库不正常中断后再度开启时，SMON会自动执行Instance Recovery,也就是会将在线重做日志里面的数据回写到数据文件里面。<2>收集空间：将表空间内相邻的空间进行合并的动作；
+　　（4）PMON(Process Monitor):监视数据库的用户进程。若用户的进程不当而被中断，PMON会负责清理任何遗留下来的资源，并释放失效的进程所保留的锁，然后从Process List中移除，以终止Process ID；
+　　（5）CKPT(Checkpoint)主要负责更新数据库的最新状态，CKPT当Checkpoint完成时会更新控制文件和数据库文件的文件头；
+　　（6）ARCn(Archiver)当Oracle数 据 库 设 定 为ARCHIVELOG Mode时，ARCn 会在Log Switch时自动将Redo Log File复制一份到指定的目录下称为归档日志文件Archivedredologs。
+　　
+4．简要介绍数据库表的约束和主要类型、作用
+解：
+　　主要四种：
+　　（1）实体完整性约束（每一行反应不同的实体）
+　　   通过索引，唯一约束。主键约束或标识属性来体现；
+　　（2）域完整性约束（指给定列的输入有效性）
+　　   通过限制数据类型，检查约束，输入格式，外键约束，默认值，非空等体现；
+　　（3）引用完整性约束（表之间的联系）
+　　   通过主外建；
+　　（4）自定义完整性约束（根据用户的需求）
+
+1.简述角色与权限之间的关系
+解：
+　　DBA：在Oracle数据库里面其实只是一个角色（role)。那么什么是角色呢?可以简单的认为一个角色就是某些个权限的集合体，也就是说把多个系统权限（system privilege)，对象权限（object privilege)以及角色（role)揉和在一起，然后赋给一个角色。说白了，Oracle引入角色的概念，其实是为了避免相关的系统权限和对象权限的赋予和回收的复杂性。把一堆系统权限和对象权限以及角色打包之后赋给某个新角色，然后再对这个新角色进行必要的操作就显得相当便捷和方便了。当然，在Oracle里面一个角色是可以赋给另外一个角色的，但是角色的赋给是不能够构成循环回路的。eg:先把role1给role2,然后把role2给role3,那么你就不可以再把role3给role1了。这是Oracle不允许的，其实你也不可以成功执行这样的包含回路角色的授权的！
+　　SYSDBA：是一种系统权限。
+　　SYSOPER：也是一种系统权限，只不过跟SYSOPER略有区别而已。SQL>conn /as sysoper 这种连接下，我们的default schema是PUBLIC.允许执行的操作如下：
+　　总之：角色包括了系统权限、对象权限、子角色，用户又可以赋予一系列的角色。
+

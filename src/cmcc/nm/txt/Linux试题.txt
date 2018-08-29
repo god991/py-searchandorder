@@ -1,0 +1,197 @@
+一、选择题 
+1．下列关于Linux说法中，不正确的是( B ) 
+A. Linux操作系统具有虚拟内存的能力 
+B. Linux操作系统不是UNIX系统的变种，因此Linux上程序不适合UNIX平台上运行   
+   C. Linux操作系统不限制应用程序可用内存的大小 
+　 D. Linux操作系统支持多用户，在同一时间可以有多个用户使用主机 
+2．Linux交换分区的作用是(C)。 
+ A．保存系统软件    B．保存访问过的网页文件    C．虚拟内存空间    D．作为用户的主目录  
+3. 如果执行命令 #chmod 746 file.txt，那么该文件的权限是（A）。  
+A. rwxr--rw-    B. rw-r--r--    C. --xr—rwx   D. rwxr--r—  
+4. Linux有三个查看文件的命令，若希望在查看文件内容过程中可以用光标上下移动来查看文件内容，应使用命令（C） 
+A．cat           B. more          C. less           D. menu 
+5. 若一台计算机的内存为8GB，则交换分区的大小通常是（C） 
+A．64GB           B. 128GB          C. 16GB           D. 32GB
+6. 在使用mkdir命令创建新的目录时，在其父目录不存在时先创建父目录的选项是（B） 
+A．-m             B. -p             C. -f               D.-d 
+7. 为了能够把新建立的文件系统mount到系统目录中，我们还需要指定该文件系统的在整个目录结构中的位置，或称为（B）。   
+A. 子目录    B. 挂载点     C. 新分区     D. 目录树  
+8. 文件exer1的访问权限为rw-r--r--，现要增加所有用户的执行权限和同组用户的写权限，下列命令正确的是（A）
+A．chmod a+x, g+w exer1     B．chmod 765 exer1 C．chmod o+x exer1          D．chmod g+w exer1
+ 9. 关闭linux系统（不重新启动）可使用-命令（C） 
+A．ctrl+alt+del   B．shutdown -r    C．halt   D．reboot 
+10. ( C) 命令可实现重新启动Linux操作系统。 
+   A．init 0    B．halt    C．shutdown-r    D．shutdown-h  
+11.假设Red Hat Linux操作系统的/usr/bin/paste文件出了问题，用户想校验拥有该文件的软件包，但又不知道哪个软件包拥有此paste文件，此时，可使用( D ) 命令来诊断问题。   
+ A．rpm-Va        B．rpm -qf /usr/bin/paste    C．rpm-qa        D．rpm -vf /usr/bin/paste     
+12. 在Linux操作系统中，网络管理员可以通过修改( C )文件对Web服务器端口进行配置。    
+A．metd.conf  B．lilo.conf    C．httpd.conf    D．resolv.conf     
+13.在Linux中，设备文件：/dev/sdb5标识的是(D)。   
+ A．第1块IDE硬盘上的第5个逻辑分区    
+B．第2块IDE硬盘上的第1个逻辑分区    
+C．第1块SCSI硬盘上的第5个逻辑分区     
+D．第2块SCSI硬盘上的第1个逻辑分区    
+14.inittab文件存放在( A )录中。 
+A．  /etc    15．  /boot    C．  /soln    D．  /root    
+15. 在Linux操作系统中提供了大量的网络配置命令，其中不带参数的route命令用来查看本机的路由信息， ( D) 命令也可以完成该项功能。 
+   A. ifconfig -r     B. traceroute    C. set     D. Netsrar –r
+16.Linux系统中在下列 ( A ) 文件中指定了网络路由信息。    
+A．/etc/network    B．/etc/reso1v.conf     
+C．/etc/host．conf    D．/etc/hosts    
+17.Linux中修改文件权限的命令是 ( B) 。 
+   A．chown    B．chmod    C．change    D．Chgrp   
+18.在Linux中，pwd命令表示  ( C )  
+A．修改口令    B．显示文件   C．显示当前路径    D．删除子目录   
+19.如果在Linux系统中，某一子目录中存在某些文件，该子目录使用rd命令( C )。   
+ A． 能够删除     
+B． 不可能删除 
+C． 删除该子目录中的所有文件和子目录后可以删除   
+D． 不能确定  解析：rd命令:是在DOS操作系统中用于删除一个目录. 
+20. 大部分主要的Linux系统文件是存放在下面的哪个目录之中的。(A) 
+A． /bin  B． /tmp  C． /lib  D． /root 
+21. Linux标准c和c++编译器是____。( C )
+ A． tc  B． cc  C． gcc  D． gdb 
+22. 如果在/etc/group文件中有一行内容是students::600:z3,l4,w5，那么在students组中有多少个用户？(D) 
+A． 3  B． 4  C． 5  D． 不清楚 
+23. /etc文件系统的标准应用是用于____？(D) 
+A． 安装附加的应用程序 
+B． 存放可执行程序、系统管理工具和库 
+C． 设置用户的主目录 
+D． 存放用于系统管理的配置文件  
+24. 下面哪条命令可被用来显示已安装文件系统的占用磁盘空间？( A )
+ A． df  B． du  C． ls  D． mount  
+25.在Linux操作系统中，( D ) 配置文件用于存放本机主机名及经常访问IP地址的主机名，在对 IP进行域名解析时，可以设定为先访问该文件，再访问DNS，最后访问NIS。    
+A．/etc/hosts     B．/etc/resolv.conf     C．/etc/inted．conf   D．/etc/host.conf    
+26.在安装Linux操作系统时，必须创建的两个分区是 (B) 。 
+   A．/和/boot    B．/和/swap    C．/home和/usr    D．/var和/trap     
+27.在Linux系统中，输入 (C)命令会从/home/user1的当前目录中进入/etc目录下。    
+A．cd etc    B．cd．/etc    C．cd /etc    D．cd    
+28.在Linux中，某文件的访问权限信息是“-rwxr--r--”，下列对该文件说明是正确的是 (  B  ) 。 
+ A．所有用户都有写权限   B．文件所有者有写权限   
+C．其他用户有写权限      D．同组用户有写权限     
+29.启动init进程前，不需要经过(D)步骤。 
+ A．LIIO加载内核  B．检测内存 C．加载文件系统 D．启动网络支持    
+30. 不能够作为Linux 根分区的分区类型有（D） 
+A． ext3         B． reiserfs       C． ext2        D． ntfs 
+31. 在Red Hat Linux 9中，一般用（ D  ）命令来查看网络接口的状态 
+A. ping       B. ipconfig  C. winipcfg  D  ifconfig   
+32．用户编写了一个文本文件a.txt，想将该文件名称改为txt.a，下列命令(D)可以实现。
+ A. cd a.txt xt.a    B. echo a.txt > txt.a   C. rm a.txt txt.a   D. cat a.txt > txt.a  
+33．下面关于i节点描述错误的是(A)。 
+A．i节点和文件是一一对应的 
+B．i节点能描述文件占用的块数 
+C．i节点描述了文件大小和指向数据块的指针 
+D．通过i节点实现文件的逻辑结构和物理结构的转换 
+34．下列不是Linux系统进程类型的是(D)。 
+A. 交互进程     B. 批处理进程   C. 守护进程     D. 就绪进程  
+35．Linux系统的开发模型是(B)。 
+A.教堂模型       B.集市模型      C.层次模型        D.网状模型  
+36．在Linux中，进程优先级的相关参数有多个，与实时进程优先级相关的参数是 (D)。
+ A.policy         B.counter       C.priority      D.rt_priority  
+37．(B)属于SYSTEM Ⅴ进程间通信方式。 
+A.管道           B.信号量        C.软中断信号      D.锁机制 
+38．在Linux系统中，每个进程都有4GB的虚拟地址空间，其中内核空间占用 (C) 。 
+A．0~2GB-1    B．0~3GB-1   C．3GB~4GB-1   D．2GB~4GB-1  
+39．Linux文件系统中，文件在外存的物理地址放在 (A) 中。    
+A.i节点                    B.用户打开文件表 
+C.系统打开文件表            D.进程控制块  
+40.当字符串用单引号（’’）括起来时，SHELL将 (C)。 
+A.解释引号内的特殊字符        B.执行引号中的命令 
+C.不解释引号内的特殊字符      D.结束进程  
+41．Linux系统中，用户文件描述符0表示 (A)。 
+   A.标准输入设备文件描述符       B.标准输出设备文件描述符    
+　C.管道文件描述符                   D.标准错误输出设备文件描述符  
+42. 如何快速切换到用户John的主目录下？(  D ) 
+A.cd  @John   B.cd  #John   C.cd  &John   D.cd  ~John  
+43.启动DNS服务的守护进程( C) 
+A. httpd start     B.httpd stop   C. named start       D. named stop  
+44. 若URL地址为http://www.nankai.edu/index.html，请问哪个代表主机名( D)。 
+A.nankai.edu.cn              B.index.html 
+C.www.nankai.edu/index.html        D.www.nankai.edu  
+45.RHEL6默认使用的文件系统类型为（ B ）
+ A.ext2     B.ext4   C.FAT     D.swap  
+46.在LINUX中，要查看文件内容，可使用（   A ）命令。 
+A.more        B.cd       C.login        D.logout  
+47.光盘所使用的文件系统类型为（ D）。 
+A.ext2      B.ext3       C.swap        D.ISO 9660  
+48.以下命令中，可以将用户身份临时改变为root的是（  B）。
+ A.SU          B.su        C.login      D.logout  
+49.LINUX所有服务的启动脚本都存放在（A ）目录中。 
+A./etc/rc.d/init.d   B./etc/init.d   C./etc/rc.d/rc   D./etc/rc.d  
+50.usermod命令无法实现的操作是（ B） 
+A.账户重命名                           B.删除指定的账户和对应的主目录 
+C.加锁与解锁用户账户                 D.对用户密码进行加锁或解锁  
+51.init进程对应的配置文件名为（  D  ），该进程是LINUX系统的第一个进程，其进程号PID始终为1。 
+A./etc/fstab      B./etc/init.conf      C./etc/inittab.conf      D./etc/inittab  
+51.在LINUX运行的7个级别中，X—WINDOWS图形系统的运行级别为（ C）。
+（ nslookup  ）。
+A.2              B.3                 C.5                   D.6  
+52.若在文字界面下，需要键入何种指令才能进入图形界面（Xwindow）。（ B） 
+A. reboot                           B.startx      C.startwindow                         D.getinto  
+53.当安装linux操作系统时将选择下列那一个操作? ( B) 
+A. 选择 "图形登录方式" 设定系统开始运行级为4 
+B. 选择 "文本登录方式" 设定系统开始运行级为3 
+C. 选择 "文本登录方式" 设定系统开始运行级为5 
+D. 选择 "图形登录方式" 设定系统开始运行级为3  
+54.在vi编辑器中的命令模式下，键入（ B ）可在光标当前所在行下添加一新行。 
+A.<O>           B.<o>          C.<i>         D.a  
+55.显示已经挂装的文件系统磁盘inode使用状况的命令是(  A  ) ?  
+A.df –i             B.su –I           C.du –I        D.free –i     
+56．启动samba服务器进程，可以有两种方式：独立启动方式和父进程启动方式，其中后者是在（  C ）文件中以独立进程方式启动。 
+A./usr/sbin/smbd    B./usr/sbin/nmbd    C.rc.samba   D./etc/inetd.conf  
+57.下列哪个命令在建立一个 tar归档文件的时候列出详细列表（  A ）。  
+A.tar -t        b)tar -cv       c)tar -cvf       d)tar –r  
+58.一个bash shell脚本的第一行是（ D  ）？ 
+A.#/bin/csh                B.#/bin/bash    C./bin/bash                D.#!/bin/bash  
+59.cd命令可以改变用户的当前目录，当用户键入命令“cd”并按Enter键后，（C ）。 
+A．当前目录改为根目录    B．当前目录不变，屏幕显示当前目录 
+C．当前目录改为用户主目录   D．当前目录改为上一级目录  
+60.显示系统主机名的命令是（  C ） 
+A. uname -r      B. who am i  C. uname -n      D. whoami  
+61.查询已安装软件包dhcp内所含文件信息的命令是（ B ） 
+A. rpm -qa dhcp      B. rpm -ql dhcp C. rpm -qp dhcp      D. rpm -qf dhcp  
+62.Linux系统中用于打印队列查询的命令是（  D ）。 
+A. lp        B. lprm C. lpr            D. lpstat   
+63．欲把当前目录下的 file1.txt 复制为 file2.txt，正确的命令是（   D   ）。 
+A. copy file1.txt file2.txt        B. cp file1.txt | file2.txt 
+C. cat file2.txt file1.txt         D. cat file1.txt > file2.txt     
+64. 下列那一个指令可以用来查看系统负载情形（ A   ） 
+A．w          B．who      c  C．load          D．ps  
+65. 一下哪个环境变量表示当前路径（  B   ）。 
+A. PATH       B. PWD         C. HOME            D.ROOT  
+66．如果想在Linux下实现热启，应当修改/etc/inittab下的哪一行（  B   ） 
+ A．#Trap CTRL-ALT-DELETE        B. ca::ctrlaltdel:/sbin/shutdown -t3 -r now  
+C. id:3:initdefault:                      D. 10:3:wait:/etc/rc.d/rc 3  
+67．从后台启动进程，应在命令的结尾加上符号（ A   ） 
+A． &           B. @          C. #           D. $   
+
+三、简答题 
+1. 列出并说明Linux的主要系统目录。 
+lib目录: 
+这个目录里存放着系统最基本的动态链接共享库，其作用类似于Windows里的.dll文件。几乎所有的应用程序都须要用到这些共享库。 
+mnt目录：主要用来临时挂载文件系统，为某些设备提供默认挂载点，如floppy，cdrom。这样当挂载了一个设备如光驱时，就可以通过访问目录/mnt/cdrom下的文件来访问相应的光驱上的文件了 
+root目录: 系统管理员（也叫超级用户）的主目录。作为系统的拥有者，总要有些特权啊！比如单独拥有一个目录。 
+lost+found目录:文件系统损坏后找回的文件存放目录。 
+opt目录: 某些第三方软件商软件的安装地点。 某些自定义的软件包会安装到这里，比如我们自己编译的源代码程序就可以安装到这个目录下，安装时可以通过 “./configure --prefix=/opt/目录”来指定路径。
+ /media目录:用来挂载光盘、u盘等文件系统的目录。 这个是一个新的目录，以前的系统里没有它，只有一个mnt，即插即用型存储设备会自动在该目录下创建挂载点，比如你插入CD，该目录会自动创建一个CDROM目录，并将光盘挂载到该目录下。  
+
+4. 什么是Shell，它的作用是什么？ 
+答： 在计算机科学中，Shell俗称壳（用来区别于核），是指“提供使用者使用界面”的软件（命令解析器）。它类似于DOS下的command和后来的cmd.exe。它接收用户命令，然后调用相应的应用程序。同时它又是一种程序设计语言。作为命令语言，它交互式解释和执行用户输入的命令或者自动地解释和执行预先设定好的一连串的命令；作为程序设计语言，它定义了各种变量和参数，并提供了许多在高级语言中才具有的控制结构，包括循环和分支。    Linux shell，其中linux shell 包括 X window manger (BlackBox和FluxBox），以及功能更强大的CDE、GNOME、KDE、 XFCE。 shell不仅是（用户命令的解释权   ），它同时也是一种功能强大的编程语言。  
+ 
+6. 什么是链接？符号链接与硬链接的区别是什么？ 
+答：链接：是一种在共享文件和访问它的用户的若干目录项之间建立联系的一种方法。Linux中包括两种链接：硬链接(Hard Link)和软链接(Soft Link),软链接又称为符号链接（Symbolic link）。 
+   区别： 如果是符号连接，源文件删了，符号连接就打不开原来的文件了。如果是硬连接，你把原来的文件删了还是能通过硬连接打开原来的文件。
+ 
+7．简述Linux文件系统通过i节点把文件的逻辑结构和物理结构转换的工作过程。 
+答：Linux通过i节点表将文件的逻辑结构和物理结构进行转换  
+i节点是一个64字节长的表，表中包含了文件的相关信息，其中有文件的大小、文件所有者、文件的存取许可方式以及文件的类型等重要信息。 
+在i节点表中最重要的内容是磁盘地址表。在磁盘地址表中有13个块号，文件将以块号在磁盘地址表中出现的顺序依次读取相应的块。若文件空间大于13块，则分别用1次、2次、3次间接块实现对数据块的定位。 
+此后，Linux文件系统通过把i节点和文件名进行连接，当需要读取该文件时，文件系统在当前目录表中查找该文件名对应的项，由此得到该文件相对应的i节点号，通过该i节点的磁盘地址表把分散存放的文件物理块连接成文件的逻辑结构。
+
+9. linux中有哪些运行级别 答：Linux 有6个运行级别 
+对各个运行级的详细解释：      0 为停机，机器关闭。  1 为单用户模式，就像Win9x下的安全模式类似。      2 为多用户模式，但是没有NFS支持。     3 为完整的多用户模式，是标准的运行级。      4 一般不用，在一些特殊情况下可以用它来做一些事情。例如在笔记本电脑的电池用尽时，可以切换到这个模式来做一些设置。      5 就是X11，进到X Window系统了。      6 为重启，运行init 6机器就会重启。  修改级别 
+vi /etc/inittab 把id:3:initdefault:中的3改为相应的级别 
+
+11. Linux系统有几种类型文件？它们分别是什么？有哪些相同点和不同点？ 
+答：3类。分别是普通文件，目录文件和设备文件。相同是它们都是文件，都有一个文件名和i节点号。不同点是，普通文件的内容为数据，目录文件的内容为目录项或文件名与i节点对应表，设备文件不占用磁盘空间，通过其i节点信息可建立与内核驱动程序的联系。
+  

@@ -1,0 +1,1116 @@
+单选题
+1、HDFS默认Block Size （B）
+A、32MB
+B、64MB
+C、128MB
+D、256MB
+2、下列哪项通常是集群的最主要的性能瓶颈？ (A)
+A、磁盘
+B、网络
+C、CPU
+D、内存
+
+
+3、关于HDFS的文件写入，正确的是 (C)
+A、支持多用户对同一文件的写操作
+B、用户可以在文件任意位置进行修改
+C、默认将文件块复制成三份存放
+D、复制的文件块默认都存在同一机架上
+
+
+4、分布式缓存技术得以应用的原因不包括：(C)
+A、网卡速度越来越快
+B、内存价格越来越便宜
+C、硬盘速度越来越快
+D、对节点服务器配置要求不高，可以很容易增加服务器数目
+
+
+5、下面关于Zookeeper的描述，错误的为：(D)
+A、Zookeeper允许分布式的进程，通过共享体系的命名空间来进行协调
+B、Zookeeper使用反映了所有Zookeeper处理顺序的数字来记录每次更新
+C、Zookeeper通过TCP连接来发送请求、获得响应、获得检测事件以及发送心跳
+D、组成Zookeeper服务的服务器不必相互知道其他服务器的存在，只需要知道主服务器的存在即可
+
+
+
+6、ClientProtocol用于在________之间通信。(D)
+A、Name Node和Secondary Node
+B、Name Node和Data Node
+C、客户端和Data Node
+D、客户端和Name Node
+
+
+7、Hadoop使用哪种排序算法？(B)
+A、RadixSort
+B、QuickSort
+C、BubbleSort
+D、FusionSort
+
+
+8、hbase中存储的数据类型是________。(D)
+A、char
+B、任意
+C、String
+D、byte
+
+
+9、大数据业务中，下面哪个说法是正确的？(BD)
+A、失败的尝试任务不会计入运行此任务的尝试数
+B、被杀掉的尝试任务会计入运行此任务的尝试数
+C、被杀掉的尝试任务不会计入运行此任务的尝试数
+D、失败的尝试任务会计入运行此任务的尝试数
+
+10、下面哪一个不是HDFS Daemon？  (A)
+A、Job Tracker
+B、Name Node
+C、Secondary Name Node
+D、Data Node
+
+
+
+11、Dynamo采用的复制策略是：  (D)
+A、逐步进行的，并且支持智能文档模式
+B、直接进行复制，没有特殊策略
+C、通过消息代理来完成复制过程
+D、NWR策略
+
+
+12、Hadoop fs中的-get和-put命令操作对象是：(B)
+A、文件
+B、两者都是
+C、目录
+
+
+13、Hadoop作者是谁？ (C)
+A、Martin Fowler
+B、Kent Beck
+C、Doug cutting
+D、Steve Jobs
+
+
+
+14、“Shuffle阶段”指什么？  (A)
+A、在排序之前将mapper的输出给reducer
+B、在rack之间平均分配mapper的输出，避免因网络过载引起数据丢失
+C、在排序之前随机地对数据分组
+D、在排序之后随机地对数据分组
+
+
+
+15、下面那句话最好地解释了Secondary Name Node的角色？ (A)
+A、合并fsimage，定期编辑日志，并将日志大小限定在一个范围内
+B、当一条日志附加到原始文件系统的文件时，Secondary Name Node保存对文件系统的修改信息
+C、Name Node的热备，在发生故障时接管工作
+D、根本不需要
+
+
+16、出现在datanode的VERSION文件格式中但不出现在namenode的VERSION文件格式中的是： (B)
+A、storageType
+B、storageID
+C、layoutVersion
+D、namespaceID
+
+
+17、大数据的3V指什么？ (C)
+A、Velocity, Viscosity, Variance
+B、Velocity, Variety, Variance
+C、Volume, Velocity, Variety
+D、Volume, Viscosity, Variety
+
+18、Client端上传文件的时候下列哪项正确  (BD)
+A、数据经过NameNode传递给DataNode
+B、Client端将文件以Block为单位，管道方式依次传到DataNode
+C、Client只上传数据到一台DataNode，然后由NameNode负责Block复制工作
+D、当某个DataNode失败，客户端会继续传给其它DataNode
+
+19、在MapReduce框架中，________提供了一个通用机制，用来减少Mapper产生的中间数据量。 (C)
+A、Reducer
+B、Partitioner
+C、Combiner
+D、OutputKeyComparator
+
+
+
+20、很多组织在考虑部署分析型的BI应用时，常有的错误概念是什么？ (B)
+A、程序需要日常维护
+B、程序安装完后就可以不用再关注
+C、仍然需要外部的咨询
+D、价格昂贵
+
+
+
+21、下列选项中，不是CouchDB在故障处理方面采用的方法是： (D)
+A、通过JavaScript函数将会把文件和它相关的用户日志作为参数
+B、文档会在写入磁盘以前进行动态的验证
+C、更新验证功能的执行发生在一个CouchDB结点的实例由于对其他的结点的数据进行复制而自我更新的过程中
+D、在多个数据中心直接对每个对象进行复制
+
+
+22、Partitioner提供什么功能？ (B)
+A、定制mapper接收哪些数据
+B、决定reducer接收哪些中间key和value
+C、在reduce之前优化key排序
+D、在reduce之后优化key排序
+
+
+
+23、在Hadoop集群中，下面哪一项限制了扩展性？ (C)
+A、可以同时执行的作业数
+B、每个Data Node的磁盘数量
+C、Name Node的内存总量
+D、作业需要的计算量
+E、Name Node和Data Node间传输速率
+
+
+24、下面哪一个不是MapReduce Daemon？(B)
+A、Job Tracker
+B、Name Node
+C、Task Tracker
+D、Data Node
+
+
+25、NameNode本地磁盘保存了Block的位置信息。(A)
+A、正确
+B、错误
+
+26、Huffma编码利用了哪种数据结构？ (B)
+A、图结构
+B、树结构
+C、数组结构
+D、链表结构
+
+
+27、当分布式缓存完成某一操作后，可以通过________通知用户程序操作已经完成。(D)
+A、中断
+B、标志位
+C、消息
+D、事件
+
+
+28、如果你的数据每周增长1TB，且数据存了3份，那么每周你需要增加多少存储空间？(C)
+A、1 TB
+B、2 TB
+C、3 TB
+D、4 TB
+
+
+
+29、HDFS默认的当前工作目录是/user/$USER，fs.default.name的值需要在哪个配置文件内说明(B)
+A、mapred-site.xml
+B、core-site.xml
+C、hdfs-site.xml
+D、以上均不是
+
+
+
+30、hbase表格中行关键字对应的列值最少有几个？(D)
+A、至少一个
+B、唯一一个
+C、多个
+D、任意个
+
+
+
+31、如果NameNode意外终止，SecondaryNameNode会接替它使集群继续工作。(A)
+A、正确
+B、错误
+
+
+32、HBase是什么？(E)
+A、某种Base
+B、Healing Base
+C、Head DataBase
+D、Highend Base
+E、Hadoop Database
+
+
+33、下面哪个在记录范围内，提供单个任务的逻辑InputSplit的视图(C)
+A、InputSplit
+B、InputFormat
+C、RecordReader
+
+
+34、Cloudera CDH是需要付费使用的。(A)
+A、正确
+B、错误
+
+35、分布式缓存中不包括哪种拓扑结构？(A)
+A、网状拓扑
+B、分割式拓扑
+C、客户端缓存拓扑
+D、复制式拓扑
+
+
+36、hbase是建立在________之上的分布式数据库。(B)
+A、hadoop
+B、hdfs
+C、hive
+D、MapReduce
+
+
+37、Mapper产生的中间key-value对会被________。(D)
+A、写入HDFS中
+B、写入本地磁盘
+C、缓存在内存中，定期写入HDFS
+D、缓存在内存中，定期写入本地磁盘
+
+
+38、因为HDFS有多个副本，所以NameNode是不存在单点问题的。(B)
+A、正确
+B、错误
+
+39、以下关于memcached的说法，错误的是：(B)
+A、memcached通过在内存中维持hash表来实现分布式
+B、memcached通过共享服务器内存来实现分布式
+C、memcached属于数据缓存技术，不属于数据库技术
+D、memcached能够储存各种格式的数据
+
+
+40、下列哪个程序通常与NameNode在一个节点启动？(D)
+A、SecondaryNameNode
+B、DataNode
+C、TaskTracker
+D、Jobtracker
+
+
+41、Hadoop配置文件“slaves”设定了在哪台主机上运行________(A)
+A、Task Tracker
+B、Job Tracker
+C、Secondary Name Node
+D、Name Node
+
+
+42、在一个Hadoop集群中有多少个JobTracker daemon？ (B)
+A、两个
+B、一个
+C、每个slave节点一个
+
+
+43、关于Hive哪个是错误的？(C)
+A、Hive基于Hadoop
+B、Hive是一个数据仓库基础架构
+C、Hive有专门的数据格式
+D、Hive定义了简单的类似SQL查询语言
+
+
+45、Mapreduce的input split就是一个block。(B)
+A、正确
+B、错误
+
+46、关于MapReduce描述错误的是：  (B)
+A、通常计算节点和存储节点是同一节点
+B、一个Task通常会把输入集切分成若干独立的数据块
+C、通常，作业的输入输出都会被存储在文件系统中
+D、MapReduce框架会先排序map任务的输出
+
+
+47、通过命令行怎样杀死一个hadoop作业？(A)
+A、hadoop job -kill 
+B、hdfs job kill -9 
+C、hadoop kill -9 
+D、hadoop job -stop 
+E、hadoop kill 
+
+
+48、Hadoop配置文件中，hadoop-site.xml显示覆盖hadoop-default.xml里的内容。在版本0.20中，hadoop-site.xml被分离成三个XML文件，不包括(A)
+A、conf-site.xml
+B、mapred-site.xml
+C、core-site.xml
+D、hdfs-site.xml
+
+
+49、客户端发现域服务器崩溃之后与________交互来处理问题。(D)
+A、hregionsever
+B、Namenode
+C、hbase client
+D、hbasemaster
+
+
+
+50、Hadoop默认调度器策略为FIFO，并支持多个Pool提交Job。(A)
+A、正确
+B、错误
+
+51、hbase物理视图中，表格是按________存储的。(A)
+A、列
+B、表格
+C、行
+D、索引
+
+
+52、下面哪个程序负责HDFS数据存储？(A)
+A、Datanode
+B、JobTracker
+C、TaskTracker
+D、NameNode
+E、SecondaryNameNode
+
+
+53、下列关于MapReduce的key/value对的说法正确的是：(A)
+A、输入键值对和输出键值对的类型不需要一致
+B、输入键值对只能映射成一个输出键值对
+C、输入的value类型和输出的value类型必须一致
+D、输入的key类型和输出的key类型必须一致
+
+
+54、HDFS有一个gzip文件大小75MB，客户端设置Block大小为64MB。当运行mapreduce任务读取该文件时input split大小为？(C)
+A、64MB
+B、一个map读取64MB，另外一个map读取11MB
+C、75MB
+D、128MB
+
+
+55、推测式执行（Speculative Execution）进程的作用是：(B)
+A、诊断和修复运行慢的任务
+B、检测任务是否比预期的慢，如果是则在另一台机器上启动一个完全相同的任务
+C、在同一时间启动两个重复的任务
+
+
+56、LZO包含的算法中适用范围最广的是：(A)
+A、LZ01X
+B、LZ01F
+C、LZ01A
+D、LZ01B
+
+
+57、对于最小粒度的任务，Hive查询的反应时间约为________。(B)
+A、几毫秒
+B、几分钟
+C、几秒
+D、几微秒
+
+
+58、在安装Hadoop时，配置文件“FsImage”包含下面哪个选项中的信息？(A)
+A、完整的文件系统名字空间，块到文件的映射
+B、文件系统元数据，每次变化的记录
+C、HDFS节点数
+
+
+59、Nagios不可以监控Hadoop集群，因为它不提供Hadoop支持。(B)
+A、正确
+B、错误
+
+60、下列选项中，不是PNUTS特点的是：(B)
+A、在数据更新的过程中，只要将数据更新发布到YMB上，就认为是更新已经提交
+B、采用一致性哈希来进行存储
+C、会指定一个数据复制的结点来作为记录的主结点
+D、采用异步复制来确保快速的更新相应时间
+
+
+61、下列关于Hadoop API的说法错误的是(A)
+A、Hadoop的文件API不是通用的，只用于HDFS文件系统
+B、Configuration类的默认实例化方法是以HDFS系统的资源配置为基础的
+C、FileStatus对象存储文件和目录的元数据
+D、FSDataInputStream是java.io.DataInputStream的子类
+
+
+62、在hbase正常运行期间，客户端与________进行交互。(D)
+A、hbasemaster
+B、hbase client
+C、hadoop master
+D、hregionsever
+
+
+63、HDFS的是基于流数据模式访问和处理超大文件的需求而开发的，默认的最基本的存储单位是64M，具有高容错、高可靠性、高可扩展性、高吞吐率等特征，适合的读写任务是：(D)
+A、多次写入，多次读写
+B、一次写入，少次读写
+C、多次写入，少次读写
+D、一次写入，多次读写
+
+
+64、关于Zookeeper的命令，描述错误的为：(B)
+A、delete /zk_test：删除znode节点“zk_test”
+B、set /zk_test：获取znode节点“zk_test”所包含的字符串
+C、ls /：查看Zookeeper中所包含的内容
+D、create /zk_test my_data：创建一个新的znode节点“zk_test”以及与它关联的字符串
+
+
+65、Ganglia不仅可以进行监控，也可以进行告警。(A)
+A、正确
+B、错误
+
+66、在Hadoop MapReduce框架中，任何值类型________。(B)
+A、不需要实现任何接口
+B、需要实现Writable接口
+C、需要实现Comparable 接口
+D、需要实现WritableComparable接口
+
+
+67、一个Mapper读入了N个key-value对，会产生：(A)
+A、任意数量的中间key-value对
+B、小于N个中间key-value对
+C、大于N个中间key-value对
+D、N个中间key-value对
+
+
+68、清洗历史数据有什么好处？(A)
+A、两个都对
+B、保证数据从开始到结束都是一致的
+C、两个都不对
+D、只需要一次性工作
+
+
+69、Name Node会持久存储一个文件的块位置。(A)
+A、错
+B、对
+
+70、在一个Hadoop集群中，一个Slave主机是：(B)
+A、Name Node和Job Tracker
+B、Data Node和Task Tracker
+C、Data Node和Job Tracker
+D、Name Node和Task Tracker
+
+
+71、下面的python模块，哪一个使用了Hadoop框架？(C)
+A、stampy
+B、octo.py
+C、dumbo
+D、全都用了
+
+
+72、Hadoop支持数据的随机写。(B)
+A、正确
+B、错误
+
+73、下面哪种操作是不被Hive查询语言所支持的？(A)
+A、在一个表格中添加索引
+B、在两个表格中做等值连接查询
+C、在一个表格中通过使用where语句来过滤一行
+D、在一个表格中通过使用select语句来选择某些列
+
+
+74、Slave节点要存储数据，所以它的磁盘越大越好。(B)
+A、正确
+B、错误
+
+75、Hive查询语言中的算术操作符的返回结果是________类型的。(C)
+A、Bigint
+B、String
+C、Number
+D、Int
+
+
+76、什么采集工具最适合用来在Hadoop和结构化数据仓库（如关系型数据库）之间批量传输数据？(A)
+A、Sqoop
+B、Flume
+C、Storm
+D、WebHDFS
+E、HDFS client
+
+
+77、Hive 默认的构造是存储在(install-dir)/conf/________。(A)
+A、hive-default.xml
+B、hive-lib.xml
+C、hive-site.xml
+D、hive-core.xml
+
+
+78、HDFS容错性由________实现。(B)
+A、机架感知
+B、机架感知（Rack Awareness）和块级别的复制
+C、主机之间的块级别复制
+D、这些都不是
+
+
+79、对表“ATABLE”的查询性能下降。分析这个性能下降现象，发现涉及3个列的查询比较费时，因为使用的是sequence file格式存储这些列的数据。针对这种情形，使用Hive，如何对建表做修改，以减少查询时间？(B)
+A、采用Sequence file和RECORD压缩可以提高性能
+B、可以对sequence file做块（BLOCK）压缩来提高性能
+C、可以采用RCFile格式存储数据来提高性能
+D、将数据存为RCFile格式并对数据采用RECORD压缩可以提高性能
+E、将数据存为Sequence file可以提高性能
+
+
+80、下面哪个选项中的Daemon总是运行在同一台主机上？(D)
+A、Name Node & Job Tracker
+B、Secondary Name Node & Job Tracker
+C、Name Node & Secondary Name Node
+D、Data Node & Task Tracker
+
+
+81、设想一个作业有100个map和25个reduce，那么有多少个输出文件？(C)
+A、125
+B、100
+C、25
+D、1
+
+
+82、hbase体系架构中，由________完成域分配任务。(D)
+A、hbase client
+B、hregionsever
+C、Namenode
+D、hbasemaster
+
+
+83、为了启动hive，我们必须在路径里安装有hadoop或者________。(A)
+A、export HADOOP_HOME=hadoop-install-dir
+B、export HIVE_HOME=hive-install-dir
+C、export JAVA_HOME=java-install-dir
+D、export HDFS_HOME=hdfs-install-dir
+
+
+84、配置Hadoop时，JAVA_HOME包含在哪一个配置文件中 (B)
+A、hadoop-default.xml
+B、hadoop-env.sh
+C、hadoop-site.xml
+D、configuration.xsl
+
+
+85、HDFS中的文件复制数，推荐的最小份数是多少？(B)
+A、2
+B、3
+C、1
+D、4
+
+
+86、应用缓存技术主要是为了提高________的效率。 (D)
+A、数据索引
+B、数据压缩
+C、数据复制
+D、数据读写
+
+
+87、Reducer输出的key-value对必须与中间临时的（Reducer的输入）key-value对的类型一致。(A)
+A、错
+B、对
+
+
+88、下面哪一个不是大数据的特征？(C)
+A、分析很耗时
+B、非结构化/半结构化
+C、协同类数据库
+D、常用PB来度量数据量
+
+
+89、在Hadoop中，下面哪个Writable实现是不可变的？(B)
+A、Text
+B、NullWritable
+C、IntWritable
+D、BooleanWritable
+
+
+90、以下四个Hadoop预定义的Mapper实现类的描述错误的是(B)
+A、IdentityMapper<K, V>实现Mapper<K, V, K, V>，将输入直接映射到输出
+B、InverseMapper<K, V>实现Mapper<K, V, K, V>，反转键/值对
+C、RegexMapper<K>实现Mapper<K, Text, Text, LongWritable>，为每个常规表达式的匹配项生成一个(match, 1)对
+D、TokenCountMapper<K>实现Mapper<K, Text, Text, LongWritable>，当输入的值为分词时，生成(taken, 1)对
+
+
+91、fsck命令行工具的作用是什么？(A)
+A、用于诊断HDFS文件系统
+B、用于发现Hadoop集群软件升级造成的文件系统中不匹配的地方
+C、用于获取Delegation Token并保存在本地文件中
+D、用于HDFS文件系统中分配文件权限
+
+
+92、下面哪个程序负责HDFS数据存储。(C)
+A、NameNode
+B、Jobtracker
+C、Datanode
+D、secondaryNameNode
+E、tasktracker
+
+
+93、HDFS的namenode保存了一个文件包括哪些数据块，分布在哪些数据节点上，这些信息也存储在硬盘上。(B)
+A、正确
+B、错误
+
+
+94、可以用什么来监视Hadoop集群环境？(B)
+A、Hyperic
+B、全部都可以
+C、Nagios
+D、Ganglia
+E、Zabbix
+
+
+95、关于MapReduce框架中一个作业的reduce任务的数目，下列说法正确的是：(D)
+A、是分块总数目的一半
+B、由自定义的Partitioner来确定
+C、由MapReduce随机确定其数目
+D、可以由用户来自定义，通过JobConf.setNumReducerTask(int)来设定一个作业中的任务数目
+
+
+96、Hadoop集群中，故障的一个单点指什么？(C)
+A、Job Tracker
+B、Data Node
+C、Name Node
+D、Task Tracker
+
+
+97、下面说法错误的是：(A)
+A、MapReduce中maper， conbiner，reducer缺一不可
+B、在JobConf中MapperClass参数可以不设
+C、在JobConf中InputFormat参数可以不设
+D、在JobConf中OutputKeyComparator参数可以不设
+
+
+98、在海量数据中，Dynamo的存储是按照什么策略来进行的？(C)
+A、消息代理
+B、传统的存储放置策略
+C、一致性哈希算法
+D、异步复制
+
+
+
+99、一个gzip文件大小75MB，客户端设置Block大小为64MB，请我其占用几个Block？
+A、1
+B、2
+C、3
+D、4
+
+
+100、HDFS的NameNode负责管理文件系统的命名空间，将所有的文件和文件夹的元数据保存在一个文件系统树中，这些信息也会在硬盘上保存成以下文件：(C)
+A、日志
+B、命名空间镜像
+C、两者都是
+
+
+101、DataNode首次加入cluster的时候，如果log中报告不兼容文件版本，那需要NameNode执行“hadoop namenode -format”操作格式化磁盘。(B)
+A、正确
+B、错误
+
+102、下面哪一个不属于失败的任务尝试？(B)
+A、任务退出，因为Task Tracker通知说它在一段时间内未收到进度报告，因而杀掉了子JVM
+B、任务退出，因为它是推测式副本（speculative duplicate）
+C、任务退出，因为子JVM突然终止了
+D、任务退出，因为Mapper/Reducer运行时异常
+
+
+103、HDFS上有统计日志数据，现在你想用外部表来对这些数据进行分析，下面哪一步不是必须要执行的？(C)
+A、用HSQL对表做查询
+B、创建表时包含指向数据的路径
+C、用Hive客户端将数据加载到表中
+D、创建包含需要字段的表
+
+
+104、Hadoop1.0和2.0都具备完善的HDFS HA策略。(B)
+A、正确
+B、错误
+
+105、什么分析工具用于帮助快速且有效地做出决策？(B)
+A、Chuck Norris
+B、Real-time visual analytics
+C、Predictive analytics
+D、Prescriptive analytics
+E、Cluster analytics
+
+
+106、关于Hadoop单机模式和伪分布式模式的说法，正确的是(D)
+A、两者都起守护进程，且守护进程运行在一台机器上
+B、单机模式不使用HDFS，但加载守护进程
+C、两者都不与守护进程交互，避免复杂性
+D、后者比前者增加了HDFS输入输出以及可检查内存使用情况
+
+
+107、Hadoop中默认的调度器是什么?(A)
+A、FIFO
+B、FairShare
+C、Capacity
+D、Job Tracker
+
+
+108、有关MapReduce的输入输出，说法错误的是：(B)
+A、每个reduce需将它的输出写入自己的文件中，输出无需分片
+B、FileInputFormat中实现的getSplits()可以把输入数据划分为分片，分片数目和大小任意定义
+C、想完全禁止输出，可以使用NullOutputFormat
+D、链接多个MapReduce作业时，序列文件是首选格式
+
+
+109、Hive最重视的性能是可测量性，延展性，________和对于输入格式的宽松匹配性。(B)
+A、较低恢复性
+B、容错性
+C、快速查询
+D、可处理大量数据
+
+
+
+
+110、下面哪个选项所包含的内容不完全属于Zookeeper统计信息的内容？(B)
+A、version和cversion
+B、dataLength和number
+C、czxid和mzxid
+D、ctime和mtime
+
+
+111、Hadoop MapReduce框架中，任何key类型________ (B)
+A、不需要实现任何接口
+B、应该实现WritableComparable接口
+C、应该实现Comparable接口
+D、应该实现Writable接口
+
+
+112、在传到Reducer之前，中间的key-value对是：(D)
+A、key没有排序，但key的value排了序
+B、key排了序，任一个key的value也排了序
+C、key没有排序，key的value也没有排序
+D、key排了序，但key的value都没有排序
+
+
+113、MapReduce框架分为Map和Reduce，下列对Reduce阶段叙述正确的是：(C)
+A、主要分为shuffle和sort这两个阶段
+B、在这个阶段过程中，key的分组规则是不可更改的
+C、其中的shuffle和sort是同时进行的
+D、Reduce数目的增加不会增加系统的开销
+
+
+114、下面哪一个场景中可以用Flume来做数据采集和流化？(A)
+A、当需要从多个源采集日志数据，然后聚合、写入HDFS时
+B、可以用于消息持久化，且需要支持可扩展和并行数据处理时
+C、可以用于在Apache Hadoop和结构化数据仓库之间高效传输批量数据时
+D、可以用于大数据集的批处理
+
+
+115、下列选项中，不是CouchDB的复制中的特点是：(A)
+A、使用优先列表
+B、复制过程是逐步进行
+C、允许分区复制
+D、支持智能文档模式
+
+
+116、MapReduce框架提供了一种序列化键/值对的方法，支持这种序列化的类能够在Map和Reduce过程中充当键或值，以下说法错误的是：(B)
+A、实现Writable接口的类是值
+B、Hadoop的基本类型Text并不实现WritableComparable接口
+C、实现WritableComparable接口的类可以是值或键
+D、键和值的数据类型可以超出Hadoop自身支持的基本类型
+
+
+117、下列选项不是Dynamo在故障发现与处理过程中采用的方法为：(A)
+A、需要表块控制器从一个远程存储服务器结点上请求一份数据
+B、不严格执行仲裁，使用了模糊成员(Sloppy Quorum)资格
+C、采用单纯的本地故障检测
+D、故障检测主要负责检测在get()和put()操作以及在传递分区和建议复制时与不可到达的协作结点连接时发生故障
+
+
+118、Hadoop环境变量中的HADOOP_HEAPSIZE用于设置所有Hadoop守护线程的内存。它默认是200MB。(B)
+A、正确
+B、错误
+
+119、GZIP压缩算法比LZO更快。(A)
+A、正确
+B、错误
+
+120、下列哪项可以作为集群的管理工具(ABCD)
+A、Puppet
+B、Pdsh
+C、Cloudera Manager
+D、Rsync + ssh + scp
+
+121、下列关于HDFS为存储MapReduce并行切分和处理的数据做的设计，错误的是：(A)
+A、为实现细粒度并行，输入分片(Input Split)应该越小越好
+B、一台机器可能被指派从输入文件的任意位置开始处理一个分片
+C、输入分片是一种记录的逻辑划分，而HDFS数据块是对输入数据的物理分割
+D、FSDataInputStream扩展了DataInputStream以支持随机读
+
+
+122、下面关于Pig的描述中，哪个是错误的？(B)
+A、用户可以编写自己的函数来进行特殊用途的处理，达到扩充Pig功能的目的
+B、在分布式环境下运行Pig程序的时候，需要编写专门的MapReduce程序
+C、Pig系统可以对用户编写的程序进行自动地优化，从而用户可以专注于语义，而非效率
+D、Pig不但可以在分布式模式下运行，也可以在单机模式下运行
+
+
+123、出现在datanode的VERSION文件格式中但不出现在namenode的VERSION文件格式中的是：(B)
+A、namespaceID
+B、storageID
+C、storageType
+D、layoutVersion
+
+
+124、HDFS的块为什么这么大？(B)
+A、最大化传输数据需要的时间
+B、最小化搜索时间
+C、最大化搜索时间
+D、最小化传输数据的时间
+
+
+125、下列哪个选项不是我们需要Hive的主要原因？(C)
+A、文件是不充分的数据抽象
+B、我们需要一个开发的数据格式
+C、Hadoop在处理作业方面是不够的
+D、我们需要一个容量为PB级别的数据仓库
+
+
+126、ABC公司希望对产品的受欢迎程度进行分析。分析需要的数据有数据库中的产品销售数据和社交网站上对产品的评价。在这个案例中，我们需要处理：(A)
+A、半结构化数据
+B、多链接结构
+C、多结构化数据
+D、非结构化数据
+E、结构化数据
+
+
+127、Client在HDFS上进行文件写入时，namenode根据文件大小和配置情况，返回部分datanode信息，谁负责将文件划分为多个Block，根据DataNode的地址信息，按顺序写入到每一个DataNode块(A)
+A、Client
+B、Namenode
+C、Datanode
+D、Secondary namenode
+
+
+128、下列对海量数据复制的观点错误的是：(A)
+A、复制数据并不需要太大的花销
+B、复制数据需要大量的空间
+C、复制数据需要大量的时间
+D、需要进行复制方面的技术研究
+
+
+129、下面那种类型间的转换是被Hive查询语言所支持的________。(D)
+A、BIGINT-->DOUBLE
+B、Double-->Number
+C、INT-->BIGINT
+D、STRING-->DOUBLE
+
+
+130、Pig不支持下述哪种数据类型？(B)
+A、Bytearray
+B、Datetime
+C、Long
+D、Chararray
+
+
+131、注意到Hive只支持等值连接，最好把最大的表格放在连接的________端以得到最好的表现。(D)
+A、最左
+B、中间
+C、任意
+D、最右
+
+
+132、在Hive 0.7和更高版本中，当设计分区时，最好遵循下面哪一种方式？(A)
+A、在查询语句的“where”子句中最常出现的列上建立索引
+B、使用外部表而不是普通表，因为外部表时查询的寻找时间最小
+C、当加载数据到表中时，避免使用staging table，因为这会增加数据加载时间
+
+
+133、Hadoop v 2.0.4-alpha版本的HDFS支持下面哪个选项中的特性？(B)
+A、当调度任务和分配存储时，把节点的物理位置考虑进去
+B、定期执行命名空间的检查点，并帮助最小化Name Node上的HDFS变化日志
+C、fsck：一个工具，诊断文件系统的健康，发现丢失簇
+D、全部都支持
+
+
+134、配置hbase过程中，下面哪个文件没有改动？(D)
+A、regionservers
+B、hbase-env.sh
+C、hbase-site.xml
+D、hbase-default.xml
+
+
+135、Hive查询语言和SQL的一个不同之处在于________操作。(C)
+A、Join
+B、Group By
+C、Partition
+D、Union
+
+
+136、PIG是脚本语言，它与mapreduce无关。(B)
+A、正确
+B、错误
+
+137、Hive是建立在________之上的一个数据仓库。(D)
+A、MapReduce
+B、hadoop
+C、HBase
+D、hdfs
+
+
+138、下列选项中，不是PNUTS的故障处理的所采用的步骤的是：(D)
+A、通过将一个检查消息发布到了YMB上
+B、表块控制器从一个远程存储服务器结点上请求一份数据
+C、将源数据块的内容复制到目标区域
+D、不严格执行仲裁，即使用了模糊成员(Sloppy Quorum)资格
+
+
+140、以下关于memcached的删除机制的说法，错误的是：(D)
+A、memcached内部不会监视记录是否过期，而是在get时查看记录的时间戳，检查记录是否过期
+B、memcached会优先使用已超时的记录的空间
+C、memcached不会释放已分配的内存
+D、在内存用尽时memcached会返回错误
+
+
+141、下面哪一个不算是大数据源？(B)
+A、客户的购买习惯
+B、这些都不是
+C、科学研究
+D、数据中心使用的电力
+
+
+142、下列选项不属于PNUTS复制数据过程的是：(D)
+A、所有的更新通过发布到消息代理之后再传播到从节点上
+B、指定一个数据复制的结点来作为记录的主结点
+C、把其他所有的更新都导向这个结点
+D、使用智能文档模式进行数据的复制
+
+
+143、在MapReduce任务中，下列哪一项会由hadoop系统自动排序？(C)
+A、values of reducer's output
+B、keys of reducer's output
+C、keys of mapper's output
+D、values of mapper's output
+
+
+144、按粒度大小的顺序，Hive数据被组成为:数据库，表格，________，和桶。(B)
+A、行
+B、分割
+C、元组
+D、栏
+
+
+145、Cloudera提供哪几种安装CDH的方法(ABCD)
+A、Cloudera manager
+B、Tar ball
+C、Yum
+D、Rpm
+
+146、对于客户端频繁访问的数据，采用哪种缓存机制效率更高？(D)
+A、复制缓存
+B、分区缓存
+C、效率与缓存机制无关
+D、本地缓存
+
+
+147、配置机架感知的下面哪项正确 (ABC)
+A、如果一个机架出问题，不会影响数据读写
+B、写入数据的时候会写到不同机架的DataNode中
+C、MapReduce会根据机架获取离自己比较近的网络数据
+
+
+148、Hadoop中，Reducer的三个阶段是： (A)
+A、Shuffle -- Sort -- Reduce
+B、Sort -- Shuffle -- Recude
+C、Reduce -- Shuffle -- Sort
+D、Shuffle -- Reduce -- Sort
+
+
+149、集群内每个节点都应该配RAID，这样避免单磁盘损坏，影响整个节点运行。(B)
+A、正确
+B、错误
+
+150、hbase中锁定________之后才能进行写操作。 (C)
+A、列
+B、待修改值
+C、行
+D、表格
+
+
+151、在配置中，哪个属性定义了jobtracker服务主机？(A)
+A、mapred.job.tracker
+B、map.red.jobtracker
+C、map.red.job.tracker
+D、mapred.jobtracker
+
+
+152、一个写数据的DFS客户端将数据发给管道中的Data Node，谁负责检查这些数据的总和校验码（checksum） (C)
+A、客户端
+B、客户端和管道中每个Data Node
+C、管道中最后一个Data Node
+D、管道中每个Data Node
+
+
+153、NameNode负责管理metadata，client端每次读写请求，它都会从磁盘中读取或则会写入metadata信息并反馈client端。(B)
+A、正确
+B、错误
+
+154、HDFS有一个LZO（with index）文件大小75MB，客户端设置Block大小为64MB。当运行mapreduce任务读取该文件时input split大小为？(B)
+A、75MB
+B、一个map读取64MB，另外一个map读取11MB
+C、64MB
+
+
+155、Pig支持多种文件命令，下面几个文件命令的描述，哪个是错误的？(D)
+A、cat，将一个或多个文件的内容输出到屏幕上
+B、mkdir，创建一个新目录
+C、cd，将当前目录修改为其他目录
+D、cp，从本地系统拷贝文件或目录到HDFS中
+
+
+156、下列选项中，不是CouchDB的特点的是： (A)
+A、系统使用的是主/从结构
+B、是专门为分布式架构而设计的
+C、不同的数据结点被设计为能够完全独立的去执行相关的操作
+D、分布式方案包括集群，笔记本上的脱机使用(如员工拜访客户时)或公司分布在世界各地的位置
+
+
+157、如果jobtracker宕掉了，运行在集群上的所有作业都会失败。 (D)
+A、错
+B、只有新作业会失败，当前作业会继续运行
+C、Tasktracker会完成分配的作业
+D、对
+
+
+158、MapReduce框架中，在Map和Reduce之间的combiner的作用是：(B)
+A、对中间格式进行压缩
+B、对中间过程的输出进行本地的聚集
+C、对Map的输出结果排序
+D、对中间结果进行混洗
+
+
+159、Secondary namenode就是namenode出现问题时的备用节点(B)
+A、正确
+B、错误
+
+
+160、HDFS无法高效存储大量小文件，想让它能处理好小文件，比较可行的改进策略不包括(D)
+A、利用SequenceFile、MapFile、Har等方式归档小文件
+B、多Master设计
+C、Block大小适当调小
+D、调大namenode内存或将文件系统元数据存到硬盘里
+
+
+161、Name Node与HDFS通信的默认端口是什么？(C) 
+A、50,030
+B、50,070
+C、8,020
+D、53,000
+E、8,021
+
+
+162、当Hadoop发现某个节点运行变慢时，它会在其他节点上触发相同的任务。Hadoop的这个特性叫： (E)
+A、Trigger Execution
+B、Replicated Execution
+C、Re-Execution
+D、Duplicate Execution
+E、Speculative Execution
+
+
+163、Checkpoint Node和Backup Node的区别是什么？ (A)
+A、Backup Node提供额外的功能，在内存中维护文件系统名字空间的一个实时拷贝，并与active状态的名字节点总是保持同步
+B、Checkpoint Node 不需要下载fsimage，但Backup Node需要周期性下载fsimage
+C、Checkpoint Node经常与NameNode运行在不同的机器上，而Backup Node与NameNode运行在同一机器上
+D、Backup Node与Checkpoint Node的配置方式一样
+
+
+164、在高阶数据处理中，往往无法把整个流程写在单个MapReduce作业中，下列关于链接MapReduce作业的说法，不正确的是：(C)
+A、使用ChainReducer时，每个mapper和reducer对象都有一个本地JobConf对象
+B、Job和JobControl类可以管理非线性作业之间的依赖
+C、ChainReducer.addMapper()方法中，一般对键/值对发送设置成值传递，性能好且安全性高
+D、ChainMapper和ChainReducer类可以用来简化数据预处理和后处理的构成
+
+
+165、下面哪个Java原生类型没有WritableWrapper封装？(B)
+A、byte
+B、short
+C、double
+D、float
+
+
+166、关于SecondaryNameNode哪项是正确的？(B)
+A、它对内存没有要求
+B、它的目的是帮助NameNode合并编辑日志，减少NameNode启动时间
+C、它是NameNode的热备
+D、SecondaryNameNode应与NameNode部署到一个节点
+
+
+167、Hadoop是Java开发的，所以MapReduce只支持Java语言编写。(B)
+A、正确
+B、错误
+
+168、针对每行数据内容为“Timestamp Url”的数据文件，在用JobConf对象conf设置conf.setInputFormat(WhichInputFormat.class)来读取这个文件时，WhichInputFormat应该为以下的：(A)
+A、KeyValueTextInputFormat
+B、TextInputFormat
+C、NLineInputFormat
+D、SequenceFileInputFormat
+
+
+169、Namenode在启动时自动进入安全模式，在安全模式阶段，说法错误的是：(A)
+A、文件系统允许有修改
+B、安全模式目的是在系统启动时检查各个DataNode上数据块的有效性
+C、根据策略对数据块进行必要的复制或删除
+D、当数据块最小百分比数满足的最小副本数条件时，会自动退出安全模式.

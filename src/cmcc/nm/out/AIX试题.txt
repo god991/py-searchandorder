@@ -1,0 +1,189 @@
+﻿选择题：
+1、 IBMserver 产品系列有哪些 ？(ABCD)
+A、pSeries
+B、xSeries
+C、iSeries
+D、zSeries
+2、 下列对pSeries说法正确的是哪个 ？ (B)
+A.用作集成的商用服务器
+B.运行功能强大的通用UNIX系统
+C.基于Intel构架的服务器
+D.宕机时间为零的高可用性的大型服务器
+3、下面哪些是smit工具的log文件 ？(C)
+A.smit.log
+B..sh_history
+C.smit.script
+D..profile
+4、smit管理工具，如何退到上一级菜单？(C)
+A、F1
+B、F2
+C、F3
+D、F6
+5、AIX Version 5.1系统安装完成后，系统第一次启动时，系统管理员看到的第一个界面是哪个？(D)
+A.Login prompt
+B.Root shell prompt
+C.Installation Assistant
+D.Configuration Assistant
+6、下面哪个命令可以用来验证操作系统是否升级成功？(A)
+A、oslevel
+B、lslpp -h bos.obj
+C、what_fileset -v
+D、lsattr -Vl bos.rte
+7、系统从5.2升级到5.3，要求保留系统原有的所有用户和日志信息等文件，用哪种安装方式？(C)
+A、New and Complete Overwrite
+B、Preservation Install
+C、Migration Install
+8、用哪个命令查看系统启动日志 ？(B)
+A、uptime
+B、alog
+C、shutdown
+D、oslevel
+9、系统启动时， init进程要读取下列哪个文件？(A)
+A、/etc/inittab
+B、/etc/rmtab
+C、/etc/passwd
+D、/etc/rc.tcpip
+10、系统启动时候，控制台上依次出现五个图标时，需要按哪个键才能进入单用户维护模式？(D)
+A、F2
+B、F3
+C、F4
+D、F5
+11、哪个文件中包括用户ID、主目录和SHELL信息？(A)
+A. /etc/passwd
+B. /etc/security/user
+C. /etc/security/environ
+D. /etc/security/passwd
+12、要从一个坏的硬盘上转移数据到一个新的硬盘，下面个操作是首先要做的? (B)
+A、把逻辑卷转移到新的硬盘上
+B、添加一个新的硬盘到原有的卷组
+C、在新硬盘上创建坏硬盘的文件系统的拷贝
+D、在新硬盘上创建坏硬盘的逻辑卷的镜像
+13、hdisk1硬盘要添加到cdvg的卷组，用哪个命令先查看这个硬盘的状态? (C)
+A、lsvg cdvg
+B、chvg cdvg
+C、lspv hdisk1
+D、chpv hdisk1
+14、哪个命令查看系统上所有paging spaces的状态信息? (A)
+A、lsps -a
+B、lsps -s
+C、lsps -l
+D、lsps –all
+15、下面哪个描述是错误的? (D)
+A、hd4、hd1、hd2是系统默认创建的逻辑卷
+B、同一个卷组的不同PV的PP大小必须要一致
+C、不同卷组的PP大小可以不一样
+D、逻辑卷大小可以动态增大，也可以动态减少
+E、一个硬盘(hdisk)只能属于一个VG
+16、为了增加文件系统的大小，系统管理员必须怎么做？(C)
+A、Unmount the file system.
+B、Boot the system into single user mode.
+C、Have enough free  physical  partitions within the volume group.
+D、Back up  the file system，change  the size，and restore the file system.
+17、为了删除文件系统，系统管理员必须先怎么做？(A)
+A、Unmount the file system.
+B、Remove the logical volume.
+C、Delete the data from the file system.
+D、Remove the NFS export for the file system.
+18、修改后/etc/inetd.conf文件后，要使得修改生效，还须执行下面哪个操作？(C)
+A、service -s inetd
+B、restart -s inetd
+C、refresh -s inetd
+D、service inetd restart
+19、在使用TAR命令备份后，管理员将磁带放到另一台磁带机读的时候出现"Media Read Error - I/O Error"，这种情况最有可能是什么原因造成的？(A)
+A、The blocksize or density setting is incorrect.
+B、There is a lack of disk space in the root file system.
+C、 The tape is not read/writable.
+D、 There is a bad cable on the tape drive.
+20、下面哪个命令用来手工stop and restart TCP/IP有关的进程? (B)
+A、Use netstat command
+B、Use the SRC utility to stop and restart
+C、Use the netconfig utility menu
+D、Issue the rmdev command on the appropriate network adapter
+21、如何查看NFS服务器P650上输出的文件系统？(C)
+A、exportlist P650
+B、rpcinfo -p P650
+C、showmount -e P650
+D、exportfs P650
+试题
+问答题：
+1、描述ROOTVG镜像的步骤？
+(1)lsdev -Ccdisk                     #查看系统盘的分配情况,本例以hdisk0 hdisk1镜像为例.
+(2)chdev -l hdisk1 -a pv=yes          #将hdisk1配置为PV
+(3) extendvg rootvg hdisk1             #将hdisk1配置入rootvg中(可以加-f参数强制执行添加到rootvg中的操作)
+(4)mirrorvg rootvg                    #镜像系统卷
+(5) bosboot -a -d /dev/hdisk1          #将引导信息加入新盘中
+(6)bootlist -m normal hdisk0 hdisk1   #更改启起序列 
+
+2、简单描述文件系统INODES包含的内容？
+许可权、链接数、文件类型、用户ID、组ID、文件长度、数据块地址、更新时间、访问时间、修改时间、访问控制信息
+
+3、怎么查看FTP、TELNET子服务状态是否正常？
+lssrc –t ftp
+lssrc –t telnet
+
+4、文件/var/adm/cron/cron.deny作用是什么？
+   记录不允许使用CRON的用户
+
+5、用户crontab文件存放在什么位置？
+    /var/spool/cron/crontabs/$USER
+ 
+6、在P650上NFS输出文件系统/PTF，想在P630上MOUNT该文件系统到/MNT，请写出相应的命令？
+　　Mount  P650:/ptf  /mnt
+　　
+7、将P650上的/HOME目录远程拷贝到P630的/PTF目录中，请写出相应的命令？
+   Rcp –r /home P630:/ptf
+
+8、修改一块网卡的端口速率，需要将该网卡设置成什么状态？
+   Detach
+
+9、NFS服务器端需要BIOD守护进程吗？
+   不需要
+
+10、使用TOPAS命令查看系统性能时，% Comp和% Noncomp分别表示什么？
+   %COMP  计算页
+   %NOCOMP   	非计算页（用于文件缓存）
+
+11、使用VMSTAT命令查看系统性能时，r、b、avm和fre分别表示什么？
+    R  等待CPU运行的队列个数
+    B  等待I/O操作的阻塞队列个数
+　　Avm   活动虚拟页面,在进程运行中分配到工作段的页面空间数
+　　fre     空闲列表的数量
+　　
+12、使用SVMON命令查看内存使用情况时，-G、-U、-P参数分别查看什么？
+-G   内存使用情况
+-U    某个用户使用的内存
+-P    某个进程使用的内存
+
+13、如何查看AIX5L系统是否为64位系统？
+　　Bootinfo  -K
+　　
+14、如何查看系统每个处理器的使用状况？
+　　Sar –P ALL
+　　
+16、用SU切换用户时，在SU后面加“-”的作用是什么？
+　　引用该用户的环境
+　　
+18、文件$HOME/.profile的作用是什么？
+配置用户的环境变量
+
+19、说明使用/dev/rmt0和/dev/rmt0.1备份数据有什么区别？
+使用Rmt0备份，备份完后磁带会倒带
+使用rmt0.1备份，备份完后不发生倒带
+
+20、一般对于裸设备怎么进行备份？
+可以使用dd来备份
+
+21、使用tctl倒磁带，写出相应命令？
+　　Tctl –f /dev/rmt0 rewind
+　　
+22、机器里面有三块网卡（ent0、ent1、ent2），怎么查看每块网卡的所在的槽位？写出命令？
+Lscfg –vl ent0
+Lscfg –vl ent1
+Lscfg –ent2
+
+23、文件/etc/services作用是什么？
+　　将网络服务与端口(port)号对应
+　　
+24、文件/usr/lib/security/mkuser.default的作用是什么？
+　　创建用户时，缺省设置用户所在的组、主目录和使用的SHELL
+　　
