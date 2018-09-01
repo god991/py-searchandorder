@@ -1,31 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c1eaaed-fc88-4670-9f13-5914cceb8933" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cmcc/nm/ReadFile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cmcc/nm/out/AIX试题.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cmcc/nm/out/Linux试题.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cmcc/nm/out/ORACLE数据库试题.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cmcc/nm/out/Windows2012试题.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cmcc/nm/out/nosql试题.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cmcc/nm/out/云计算试题.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cmcc/nm/out/互联网试题.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cmcc/nm/out/传统网络试题.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cmcc/nm/out/区块链试题.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cmcc/nm/out/大数据试题.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cmcc/nm/out/物联网测试题.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cmcc/nm/txt/AIX试题.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cmcc/nm/txt/Linux试题.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cmcc/nm/txt/ORACLE数据库试题.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cmcc/nm/txt/Windows2012试题.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cmcc/nm/txt/nosql试题.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cmcc/nm/txt/云计算试题.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cmcc/nm/txt/互联网试题.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cmcc/nm/txt/传统网络试题.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cmcc/nm/txt/区块链试题.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cmcc/nm/txt/大数据试题.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cmcc/nm/txt/物联网测试题.txt" afterDir="false" />
+    <list default="true" id="6c1eaaed-fc88-4670-9f13-5914cceb8933" name="Default Changelist" comment="test">
+      <change afterPath="$PROJECT_DIR$/src/cmcc/leetcode/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cmcc/leetcode/suanfa.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/myFirstPython.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/myFirstPython.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -106,9 +86,48 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="1202414665">
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="1985" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="1985" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.28" value="1" />
+          <entry key="project.open.time.45" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/cmcc/leetcode/suanfa.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="552">
+              <caret line="95" column="20" selection-start-line="95" selection-start-column="20" selection-end-line="95" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -126,9 +145,10 @@
       <list>
         <option value="$PROJECT_DIR$/src/cmcc/nm/PathSearch.py" />
         <option value="$PROJECT_DIR$/src/cmcc/nm/PythonTest.py" />
-        <option value="$PROJECT_DIR$/src/cmcc/nm/ClassTest.py" />
         <option value="$PROJECT_DIR$/src/cmcc/nm/txt/AIX试题.txt" />
         <option value="$PROJECT_DIR$/src/cmcc/nm/ReadFile.py" />
+        <option value="$PROJECT_DIR$/src/cmcc/nm/ClassTest.py" />
+        <option value="$PROJECT_DIR$/src/cmcc/leetcode/suanfa.py" />
       </list>
     </option>
   </component>
@@ -152,35 +172,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="myFirstPython" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myFirstPython" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myFirstPython" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myFirstPython" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myFirstPython" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myFirstPython" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cmcc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myFirstPython" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myFirstPython" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cmcc" type="462c0819:PsiDirectoryNode" />
-              <item name="nm" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -192,14 +183,30 @@
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="py-searchandorder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="py-searchandorder" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="py-searchandorder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="py-searchandorder" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/Program Files/Git/bin/git.exe" />
+    <property name="last_opened_file_path" value="D:/ProgramData/Anaconda3/python.exe" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -226,7 +233,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ReadFile">
+  <component name="RunManager" selected="Python.suanfa">
     <configuration name="ClassTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="myFirstPython" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -290,13 +297,36 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="suanfa" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="myFirstPython" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/cmcc/leetcode" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/cmcc/leetcode/suanfa.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.PythonTest" />
       <item itemvalue="Python.ClassTest" />
       <item itemvalue="Python.ReadFile" />
+      <item itemvalue="Python.suanfa" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.suanfa" />
         <item itemvalue="Python.ReadFile" />
         <item itemvalue="Python.ReadFile" />
         <item itemvalue="Python.ClassTest" />
@@ -326,24 +356,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1299" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6923077" visible="true" weight="0.28628072" />
-      <window_info id="Structure" order="1" sideWeight="0.30769232" side_tool="true" visible="true" weight="0.28628072" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6891271" visible="true" weight="0.23625793" />
+      <window_info id="Structure" order="1" sideWeight="0.31087288" side_tool="true" visible="true" weight="0.23625793" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.52307695" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.1" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4553846" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27524972" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.42397335" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.27546778" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49947146" weight="0.30965593" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5005285" side_tool="true" weight="0.30965593" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32923076" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.3723077" />
+      <window_info anchor="bottom" id="Messages" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -362,6 +394,32 @@
         <option value="3" />
         <option value="1" />
       </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
     </option>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -389,11 +447,31 @@
           <line>9</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/cmcc/leetcode/suanfa.py</url>
+          <line>44</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/cmcc/leetcode/suanfa.py</url>
+          <line>74</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="words.find(x)" language="Python" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>words.find(x)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>cargoArray[len(haveTryCargo)-2][residueCapaIndex]</expression-string>
         <language-id>Python</language-id>
@@ -426,13 +504,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cmcc/nm/ClassTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-293">
-          <caret line="66" column="6" lean-forward="true" selection-start-line="66" selection-start-column="6" selection-end-line="66" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cmcc/nm/PathSearch.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1996">
@@ -461,16 +532,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cmcc/nm/ReadFile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-          <folding>
-            <element signature="e#50#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -482,6 +543,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="1663" selection-start-line="1663" selection-end-line="1663" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cmcc/nm/ReadFile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+          <folding>
+            <element signature="e#50#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cmcc/leetcode/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cmcc/nm/ClassTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="82" column="89" selection-start-line="82" selection-start-column="89" selection-end-line="82" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cmcc/leetcode/suanfa.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="95" column="20" selection-start-line="95" selection-start-column="20" selection-end-line="95" selection-end-column="20" />
         </state>
       </provider>
     </entry>
