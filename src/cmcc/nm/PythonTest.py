@@ -3,7 +3,7 @@ Created on 2018年8月2日
 
 @author: liminjie
 '''
-import src.cmcc.nm.PathSearch as ps
+import src.cmcc.study.PathSearch as ps
 
 if __name__ == '__main__':
     pass
@@ -26,4 +26,4 @@ pathWeight={'1':[2,4,3],'2':[5,3],'3':[2,5],'4':[9,9],'5':[6,2],\
 #动态规划求解
 capacity=4
 cargoDict={'吉他':[1,1500],'音响':[4,3000],'电脑':[3,2000]}
-print(ps.dynamicProgramming_Search(capacity,cargoDict))
+#print(ps.dynamicProgramming_Search(capacity,cargoDict))

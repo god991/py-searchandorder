@@ -16,4 +16,4 @@ def dynamicProgramming_Search(capacity,cargoDict={'1':'2'}):
     cargoDict={'1':'3','2':'3'}
     tempDict.values()
     minCapa=min([x[0] for x in cargoDict.values()])
-    cargoDict.
+    #cargoDict.

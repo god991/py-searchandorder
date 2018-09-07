@@ -36,7 +36,7 @@ def getMax(arr):
 
 #-----快速排序----------------------------------------
 def fastOrder(arr):
-    #arr=[1,3,5,3]    
+    #arr=[1,3,5,3]
     if len(arr)<=1:
         return arr
     else:
@@ -49,6 +49,36 @@ def fastOrder(arr):
             elif x>midValue:
                 rightArr.append(x)
         return fastOrder(leftArr)+[midValue]+fastOrder(rightArr)
+
+def fastOrder2(arr):
+    if arr==None:
+        arr=[0,1,2]
+    i=1
+    j=len(arr)-1
+    while(i<j):
+        while(arr[i]<arr[0]):
+            i+=1
+        while(arr[j]>arr[0]):
+            j-=1
+        arr[i],arr[j]=arr[j],arr[i]
+        i+=1
+        j-=1
+
+
+#-----希尔排序--------------
+def shell(arr):
+    n=len(arr)
+    h=1
+    while h<n/3:
+        h=3*h+1
+        while h>=1:
+            for i in range(h,n):
+                j=i
+                while j>=h and arr[j]<arr[j-h]:
+                    arr[j], arr[j-h] = arr[j-h], arr[j]
+                    j-=h
+                    h=h//3
+    print(arr)
 
 #-----广度优先搜索------
 #---搜索当前深度的所有下一级节点，如下一级节点=目标节点，结束返回，否则添加到队列，然后继续
